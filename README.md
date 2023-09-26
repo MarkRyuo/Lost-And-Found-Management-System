@@ -12,3 +12,5 @@
   Maranan, Mikaela <br>
   Grenias, Ganella Mae
  </div>
+
+<p><a src="https://i.pinimg.com/originals/ca/e1/b4/cae1b4f6b223fe5a7bb712b680cffa67.png"></a></p>
