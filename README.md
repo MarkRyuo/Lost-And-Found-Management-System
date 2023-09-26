@@ -7,10 +7,10 @@
 
 <h1>Members :</h1>
 
- <div style="Background-color: aqua ;" font-size="100px">
-  Malupa, Jhon Mark 
-  Dela Cruz, Leomar 
-  Esguerra, Aubrey
-  Maranan, Mikaela
+ <div>
+  Malupa, Jhon Mark <br>
+  Dela Cruz, Leomar <br>
+  Esguerra, Aubrey <br>
+  Maranan, Mikaela <br>
   Grenias, Ganella Mae
  </div>
