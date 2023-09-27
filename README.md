@@ -1,5 +1,7 @@
 # Lost-And-Found-Management-System
 
+<p>BAGO MAG CODE AY IMESSAGE MUNA AKO</p>
+
 <h2>The system maintains an organized inventory of lost and found items, provides reporting and analytics for informed decisions, 
  supports integration with other systems, complies with accessibility standards, encourages user feedback, and can scale for future growth</h2>
 
