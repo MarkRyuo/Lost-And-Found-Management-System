@@ -1,0 +1,33 @@
+.header{
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    padding-left: 20px;
+
+    background-color: black;
+    color: white;
+    font-family: arial;
+}
+
+
+
+.left-section{
+    display: flex;
+}
+
+.Logout{
+    margin-right: 10px;
+}
+
+.About{
+    margin-right: 15px;
+}
