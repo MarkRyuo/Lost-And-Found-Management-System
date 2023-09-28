@@ -2,6 +2,7 @@
     height: 55px;
 
     display: flex;
+    
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -18,9 +19,17 @@
     font-family: arial;
 }
 
-
-
 .left-section{
+    width: 160px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu{
+    height: 50px;
+}
+
+.right-section{
     display: flex;
 }
 
