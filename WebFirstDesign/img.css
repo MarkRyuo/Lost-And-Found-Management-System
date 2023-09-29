@@ -1,7 +1,7 @@
 * {
   margin-top: 0;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0;  
+  margin-right: 0;
 }
 
 .center, img {
@@ -11,16 +11,21 @@
 }
 
 nav {
-  background-color: black;
-  color: aliceblue;
+  background-color: #3E5C76;
+  color: rgb(255, 255, 255);
   border: 1px solid white;
-  height: 10vh;
+  height: 20vh;
+}
+.IconText {
+  width: 5vw;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 2%;
 }
 
-#li1 {
-  list-style:none ;
+.about, #li1{
+  list-style: none;
   float: right;
   font-size: xx-large;
-  text-decoration: underline;
-  text-align: center;
+  width: 10vw;
 }
