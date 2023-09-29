@@ -1,0 +1,26 @@
+* {
+  margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.center, img {
+  margin-top: 0 ;
+  margin-left: 10px;
+  width: 60vw;
+}
+
+nav {
+  background-color: black;
+  color: aliceblue;
+  border: 1px solid white;
+  height: 10vh;
+}
+
+#li1 {
+  list-style:none ;
+  float: right;
+  font-size: xx-large;
+  text-decoration: underline;
+  text-align: center;
+}
