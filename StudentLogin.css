@@ -29,6 +29,8 @@
 }
 
 .student-text{
+    background-color: rgb(209, 66, 66);
+    color: white;
     border-bottom-style: solid;
     text-align: center;
     font-size: 40px;
