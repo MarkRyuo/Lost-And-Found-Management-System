@@ -1,0 +1,30 @@
+
+
+.Our-Team{
+    font-style: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.team-picture{
+    background: #A4133C;
+    height: 230px;
+    width: 1fr;
+}
+
+
+.leomar-pic{
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+    border-radius: 100px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.name-leomar{
+    font-size: 20px;
+    margin-left: 80px;
+    color: white;
+    width: 200px;
+    font-style: bold;
+}

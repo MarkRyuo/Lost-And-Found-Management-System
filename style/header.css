@@ -10,10 +10,11 @@
     right: 0;
 
     height: 80px;
-    background-color: rgb(209, 66, 66);
+    background: #A4133C;
+
     color: white;
 
-    
+    z-index: 1;
 }
 
 .left-section{
@@ -32,25 +33,6 @@
     font-size: 20px;
 }
 
-.text{
-    background-color: rgba(243, 240, 240, 0.401);
-    box-shadow: inset 1px 1px 2px
-    rgba(0, 0, 0, 0.5);
-    color: white;
-    border-style: solid;
- 
-    border: color(srgb 255 255 255);
-    font-size: 50px;
-    box-shadow: inset;
-
-    margin-top: 250px;
-    padding: 50px;
-    
-    text-align: center;
-    
-    left: 0;
-    right: 0;
-}
 
 ul {
     list-style: none;
