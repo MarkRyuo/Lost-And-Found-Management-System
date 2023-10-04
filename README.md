@@ -1,6 +1,6 @@
 # Lost-And-Found-Management-System
 
-<p>BAGO MAG CODE AY IMESSAGE MUNA AKO
+<p>BAGO MAG CODE AY IMESSAGE MUNA AKO <br>
  -JHON MARK!
 </p>
 
