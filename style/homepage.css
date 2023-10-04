@@ -4,11 +4,13 @@
     margin-top: 150px;
     height: 200px;
     width: 500px;
+    background-color: lightblue;
+    padding: 10px;
 }
 
 .text-welcome{
     color: #A4133C;
-    font-size: 30px;
+    font-size: 50px;
     font-style: italic;
     line-height: 20px;
     margin-bottom: 5px;
@@ -21,6 +23,7 @@
     font-family: inter;
     font-size: 20px;
     margin-left: 10px;
+    padding-left: 15px;
 }
 
 .picture{
