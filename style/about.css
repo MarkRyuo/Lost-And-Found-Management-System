@@ -1,0 +1,41 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+    height: 80px;
+    background: #A4133C;
+    
+    font-size: 20px;
+    color: white;
+
+    padding-left: 20px;
+
+    z-index: 1;
+}
+
+.exit{
+    padding-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.about{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.text-box{
+    background-color: lightblue;
+    top: 150px;
+    height: 400px;
+    width: 600px;  
+}
