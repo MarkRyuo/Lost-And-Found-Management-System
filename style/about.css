@@ -21,13 +21,14 @@
 }
 
 .exit{
-    padding-right: 30px;
+    padding-right: 60px;
     color: white;
     text-decoration: none;
+    font-size: 25px;
 }
 
 .about{
-    margin-top: 100px;
+    margin-top: 200px;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
@@ -35,7 +36,15 @@
 
 .text-box{
     background-color: lightblue;
+    margin-top: 80px;
     top: 150px;
-    height: 400px;
+    height: 800px;
     width: 600px;  
+}
+
+.exit:hover {
+    background-color: transparent;
+    color: yellow;
+    text-decoration: none;
+    transition: 1s;
 }
