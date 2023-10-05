@@ -1,0 +1,49 @@
+.text{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 150px;
+    height: 200px;
+    width: 500px;
+    padding: 10px;
+}
+
+.text-welcome{
+    color: #A4133C;
+    font-size: 50px;
+    font-style: italic;
+    line-height: 20px;
+    margin-bottom: 5px;
+    margin-left: 30px
+    
+}
+
+.text-LostandFound{
+    font-style: italic;
+    font-family: inter;
+    font-size: 20px;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+.picture{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    margin-left: 1000px;
+    top: -20px;
+}
+
+.robot1{
+    height: 270px;
+    width: 300px;
+}
+
+.robot-pic{
+    margin-left: 20px;
+    margin-top: 370px; 
+}
+
+.robot2{
+    height: 270px;
+    width: 300px;
+}
