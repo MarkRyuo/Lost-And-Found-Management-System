@@ -29,14 +29,16 @@ main {
 
 }
 
-#welcome {
+main .section-1 #welcome {
   font-size: 5rem;
   color: var(--text-Color);
 }
 
-#lost-and-found {
+.section-1 .sec-1 #lost-and-found {
   font-size: 2rem;
 }
+
+
 
 /* .Robot-image-1 {
   width: 25vw;
