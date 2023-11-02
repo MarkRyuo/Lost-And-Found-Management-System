@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bgColor: hsl(348, 100%, 97%);
+
+}
+
+body {
+  background-color: var(--bgColor);
+}
