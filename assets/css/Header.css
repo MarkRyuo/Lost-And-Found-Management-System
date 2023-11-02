@@ -1,0 +1,7 @@
+
+
+.navigation {
+  --bgnav-Color: hsl(343, 79%, 35%);
+
+  background-color: var(--bgnav-Color);
+}
