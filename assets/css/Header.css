@@ -4,6 +4,7 @@
 :root {
   --bgnav-Color: hsl(343, 79%, 35%);
   --linkTextcolor: #ffffff;
+  --shadow-nav: hsl(0, 100%, 31%);
 }
 
 
@@ -15,6 +16,7 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  box-shadow: 5px 8px 3px var(--shadow-nav);
 }
 
 /* Logo font awesome*/
