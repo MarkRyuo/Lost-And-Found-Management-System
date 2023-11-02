@@ -1,7 +1,43 @@
 
+:root {
+  --bgnav-Color: hsl(343, 79%, 35%);
+  --linkTextcolor: 
+}
+
 
 .navigation {
-  --bgnav-Color: hsl(343, 79%, 35%);
-
+  height: 11vh;
+  width: 100vw;
   background-color: var(--bgnav-Color);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Logo font awesome*/
+
+.fa-solid {
+  color: white;
+  font-size: 2.5rem;
+  margin: 1.5rem;
+}
+
+
+.nav-link-li {
+  display: flex;
+  gap: 5rem;
+}
+
+
+/* ul li a */
+.nav-link-li li {
+  list-style: none;
+}
+
+.nav-link-li li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
 }
