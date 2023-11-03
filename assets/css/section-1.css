@@ -1,3 +1,6 @@
+/* Font Here */
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
+
 :root {
   --text-Color: hsl(343, 75%, 20%);
 }
@@ -34,6 +37,7 @@ main {
 main .section-1 #welcome {
   font-size: 5rem;
   color: var(--text-Color);
+  font-family: 'Sono', monospace;
 }
 
 .section-1 .sec-1 #lost-and-found {
