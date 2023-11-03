@@ -51,13 +51,13 @@
 /* Section design here */
 
 section {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100vw;
   height: 90vh;
 }
 
 .about-lostandfound {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 5rem 30rem;
   display: flex;
   flex-direction: column;
