@@ -1,6 +1,34 @@
 
 
+:root {
+  --bgnav-Color: hsl(343, 79%, 35%);
+  --linkTextcolor: #ffffff;
+  --shadow-nav: hsl(0, 100%, 31%)
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 
 .navigation {
-  
+  border: 1px black solid;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: center;
+
+  height: 11vh;
+  width: 100vw;
 }
+
+/* Font awesome icon Home */
+
+.navigation .home .fa-solid {
+  font-size: 5rem;
+}
+
+/* Font awesome icon Home */
+
