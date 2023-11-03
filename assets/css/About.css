@@ -3,7 +3,8 @@
 :root {
   --bgnav-Color: hsl(343, 79%, 35%);
   --linkTextcolor: #ffffff;
-  --shadow-nav: hsl(0, 100%, 31%)
+  --shadow-nav: hsl(0, 100%, 31%);
+  --hover-Home: #000000;
 }
 
 
@@ -33,6 +34,10 @@
   color: var(--linkTextcolor);
 }
 
+.navigation .Home a .fa-solid:hover {
+  color: var(--hover-Home);
+}
+
 
 /* Font awesome icon Home */
 
@@ -41,3 +46,6 @@
   width: 45vw;
   text-align: start;
 }
+
+
+/* Section design here */
