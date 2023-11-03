@@ -7,7 +7,9 @@
 main {
   display: flex;
   justify-content: center;
-  margin-top: 20vh;
+  /* margin-top: 5vh; */
+  height: 70vh;
+
   /* border: 1px solid black; */
 }
 
@@ -40,6 +42,6 @@ main .section-1 #welcome {
 
 
 
-/* .Robot-image-1 {
-  width: 25vw;
-} */
+.Robot-image-1 {
+  width: 35vw;
+} 
