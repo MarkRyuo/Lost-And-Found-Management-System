@@ -12,7 +12,7 @@ main {
   display: flex;
   justify-content: center;
   /* margin-top: 5vh; */
-  height: 70vh;
+  height: 85vh;
 
   /* border: 1px solid black; */
 }
@@ -31,7 +31,7 @@ main {
   flex-wrap: wrap;
   /* border: 1px solid black; */
   height: 30vh;
-  width: 40vw;
+  width: 40vw ;
 
 }
 
