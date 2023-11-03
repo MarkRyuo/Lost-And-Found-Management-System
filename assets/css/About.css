@@ -22,12 +22,13 @@
 
   height: 11vh;
   width: 100vw;
+  background-color: var(--bgnav-Color);
 }
 
 /* Font awesome icon Home */
 
-.navigation .home .fa-solid {
-  font-size: 5rem;
+.navigation .Home a .fa-solid {
+  font-size: 1.5rem;
 }
 
 /* Font awesome icon Home */
