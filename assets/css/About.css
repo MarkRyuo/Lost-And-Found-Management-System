@@ -14,7 +14,7 @@
 
 
 .navigation {
-  border: 1px black solid;
+  /* border: 1px black solid; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -23,13 +23,19 @@
   height: 11vh;
   width: 100vw;
   background-color: var(--bgnav-Color);
+  box-shadow: 5px 8px 3px var(--shadow-nav);
 }
 
 /* Font awesome icon Home */
 
 .navigation .Home a .fa-solid {
   font-size: 1.5rem;
+  color: white;
 }
+
 
 /* Font awesome icon Home */
 
+.navigation h1 {
+  color: #ffffff;
+}
