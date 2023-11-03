@@ -38,4 +38,6 @@
 
 .navigation h1 {
   color: #ffffff;
+  width: 45vw;
+  text-align: start;
 }
