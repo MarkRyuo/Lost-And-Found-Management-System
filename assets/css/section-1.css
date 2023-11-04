@@ -13,6 +13,7 @@ main {
   justify-content: center;
   /* margin-top: 5vh; */
   height: 85vh;
+  min-width: 600px;
 
   /* border: 1px solid black; */
 }
@@ -44,6 +45,7 @@ main .section-1 #welcome {
 .section-1 .sec-1 #lost-and-found {
   font-size: 2rem;
   font-family: 'Sono', monospace;
+  min-width: 500px;
 }
 
 
