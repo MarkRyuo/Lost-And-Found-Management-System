@@ -1,4 +1,4 @@
-
+/* Trial */
 
 .section-of-sign {
   /* border: 1px solid black; */
@@ -10,20 +10,20 @@
 .box {
   border: 1px solid black;
   width: 25vw;
-  height: 50gvh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .Admin {
-
+  /* Under trial */
 }
 
 .Student {
-
+  /* Under trial */
 }
 
 .Security {
-
+  /* Under trial */
 }
