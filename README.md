@@ -1,7 +1,33 @@
-# Lost-And-Found-Management-System
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100&family=Libre+Franklin&display=swap" rel="stylesheet">
 
-Bago Mag Merge Chat Niyo muna ako <br>
--Jhon Mark
+<style>
+
+  h1 {
+    color: skyblue;
+    font-size: 3rem;
+    font-family: 'Libre Franklin', sans-serif;
+  }
+
+  h2 {
+    font-family: 'Kanit', sans-serif;
+  }
+  
+  h3 {
+    color: red;
+    
+  }
+
+</style>
+
+
+
+
+<h1>Lost-And-Found-Management-System</h1>
+
+<h3>WARNING! Bago Mag Merge Chat Niyo muna ako 
+-Jhon Mark </h3>
 
 
 <h1>Lost and Found Management System</h1>
