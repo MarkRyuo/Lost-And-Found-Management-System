@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Login</title>
+    <title>Secuirty Login</title>
+    <link rel="stylesheet" href="style/StudentLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="SecurityLogin">
-        <input type="text" placeholder="Username">
-        <div>Username</div>
-        <input type="text" placeholder="Password">
-        <div>Password</div>
-        <button>Login</button>
-        <button>Cancel</button>
+
+   <div class="right-section">
+    <h2>Sign in</h2>
+   </div>
+   <div class="StudentLogin">
+    <div class="student-text">Security Login</div>
+        <form action="studentlongin.php" method="post">
+            <div class="Sr-code">Username:</div>
+            <input class="user" type="text" name="sr_code" placeholder="Username">
+
+            <div class="Password">Password:</div>
+            <input class="password" type="password" name="password" placeholder="Password">
+            
+            
+        <button class="Login-Button" type="submit">Login</button>
+        <button class="Cancel-Button" type="button">Exit</button>
+            
+
+        </form>
     </div>
+    
 </body>
 </html>
