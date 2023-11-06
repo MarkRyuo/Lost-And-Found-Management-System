@@ -38,18 +38,22 @@ main {
   height: 30vh;
   width: 40vw ;
 
+
+
 }
 
 main .section-1 #welcome {
   font-size: 5rem;
   color: var(--text-Color);
   font-family: 'Sono', monospace;
+  
 }
 
 .section-1 .sec-1 #lost-and-found {
   font-size: 2rem;
   font-family: 'Sono', monospace;
   min-width: 500px;
+  
 }
 
 
