@@ -11,3 +11,7 @@
 body {
   background-color: var(--bgColor);
 }
+
+html {
+  scroll-behavior: smooth;
+}
