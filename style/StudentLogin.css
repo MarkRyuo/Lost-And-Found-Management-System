@@ -117,3 +117,27 @@ div h2{
 .Cancel-Button:active{
     background-color: #d73966;
 }
+
+.Create-Button{
+    height: 45px;
+    width: 300px;
+    background-color: #FFF0F3;
+    color:#A4133C;
+
+    font-size: 15px;
+
+    border-radius: 30px;
+    border-style: none;
+
+    margin-left: 820px;
+    
+    cursor: pointer;
+}
+
+.Create-Button:hover{
+    opacity: 0.9;
+}
+
+a{
+    text-decoration: none;
+}
