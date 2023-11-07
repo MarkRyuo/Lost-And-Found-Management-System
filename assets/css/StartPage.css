@@ -55,7 +55,20 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  justify-content:space-between ;
+  /* gap: 5rem; */
+  height: 50vh;
 
 }
 
+.Are-you-a, .find-Or {
+  font-size: 2rem ;
+}
 
+.find-Link {
+  border: 1px solid black;
+
+  font-size: 2rem;
+  color: var(--bg-Color);
+  
+}
