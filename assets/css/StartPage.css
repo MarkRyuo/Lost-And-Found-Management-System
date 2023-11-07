@@ -6,5 +6,11 @@
 :root {
   --box-Color: hsla(343, 79%, 36%, 78%);
   --bg-Color: hsl(348, 100%, 97%);
-  
+
+}
+
+body {
+  background-image: url(/assets/Images/Bsu\ site.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
