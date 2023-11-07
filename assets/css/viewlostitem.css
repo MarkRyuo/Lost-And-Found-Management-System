@@ -1,18 +1,18 @@
 
-
+/* Section */
 .view {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 50vw;
+  height: 50vh;
+
+  border: 1px solid black;
 }
 
-/* Item Number */
-
-.item-number {
+.input-text {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
-/* Item name */
-.item-name {
-  display: flex;
-  flex-direction: column;
-}
-
