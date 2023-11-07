@@ -4,16 +4,17 @@
 }
 
 :root {
-  --box-Color: hsla(343, 79%, 36%, 78%);
+  --box-Color: hsla(343, 79%, 36%, 90%);
   --bg-Color: hsl(348, 100%, 97%);
   --shadow-box: hsl(0, 100%, 31%);
 
 }
 
 body {
-  background-image: url(/assets/Images/Bsu\ site.jpg);
+  
+  background: url(/assets/Images/Bsu\ site.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:1940px;
   float: right;
 }
 
