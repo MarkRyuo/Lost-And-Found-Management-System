@@ -1,0 +1,18 @@
+
+
+.view {
+  display: flex;
+}
+
+/* Item Number */
+
+.item-number {
+  display: flex;
+  flex-direction: column;
+}
+/* Item name */
+.item-name {
+  display: flex;
+  flex-direction: column;
+}
+
