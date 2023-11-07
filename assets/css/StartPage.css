@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --box-Color: hsla(343, 79%, 36%, 78%);
+  --bg-Color: hsl(348, 100%, 97%);
+  
+}
