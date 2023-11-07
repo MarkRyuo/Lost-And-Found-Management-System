@@ -41,8 +41,22 @@ aside {
 }
 
 
-/* fa-user-secret Admin Sign-in */  
+/* fa-user-secret Admin Sign-in */ 
 
+.direct-Admin{
+  margin-left: auto;
+  color: var(--bg-Color);
+}
+.fa-user-secret {
+  font-size: 2.5rem;
+}
+
+/* lost-Found-h1 */
+
+.lost-Found-h1 {
+  font-size: 2.2rem;
+  text-align: center;
+}
 
 
 
@@ -55,20 +69,22 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:space-between ;
-  /* gap: 5rem; */
-  height: 50vh;
+  /* justify-content:space-between ; */
+  gap: 4rem;
+  height: 45vh;
+  width: 30vw;
 
 }
 
 .Are-you-a, .find-Or {
-  font-size: 2rem ;
+  font-size: 1.5rem ;
 }
 
 .find-Link {
-  border: 1px solid black;
+  /* background-color: var(--bg-Color); */
 
   font-size: 2rem;
   color: var(--bg-Color);
-  
+
+  border-radius: 3rem;
 }
