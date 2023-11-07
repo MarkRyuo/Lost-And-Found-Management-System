@@ -13,4 +13,24 @@ body {
   background-image: url(/assets/Images/Bsu\ site.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  float: right;
+}
+
+aside {
+  border: 1px solid black;
+  /* Flexx */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+
+  width: 35vw;
+  height: 100vh;
+
+  background-color: var(--box-Color);
+  color: white;
+
+  /* border radius */
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
