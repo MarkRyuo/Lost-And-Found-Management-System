@@ -54,7 +54,7 @@ aside {
 /* lost-Found-h1 */
 
 .lost-Found-h1 {
-  font-size: 2.2rem;
+  font-size: 2.6rem;
   text-align: center;
 }
 
@@ -63,7 +63,7 @@ aside {
 /* Section here */
 
 .Find-who {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   display: flex;
   flex-direction: column;
@@ -76,15 +76,20 @@ aside {
 
 }
 
-.Are-you-a, .find-Or {
-  font-size: 1.5rem ;
+.Are-you-a {
+  font-size: 1.7rem ;
+}
+
+.find-Or {
+  font-size: 1.7rem ;
 }
 
 .find-Link {
   /* background-color: var(--bg-Color); */
 
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: var(--bg-Color);
+  text-decoration: none;
 
   border-radius: 3rem;
 }
