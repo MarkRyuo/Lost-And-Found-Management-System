@@ -9,9 +9,10 @@
 }
 
 :root {
-  --box-Color: hsla(343, 79%, 36%, 78%);
+  --box-Color: hsla(343, 59%, 46%, 0.78);
   --bg-Color: hsl(348, 100%, 97%);
   --shadow-box: hsl(0, 100%, 31%);
+  --text-Color: #3d0918;
 
 }
 
@@ -96,9 +97,19 @@ aside {
   /* background-color: var(--bg-Color); */
 
   font-size: 2.4rem;
-  color: var(--bg-Color);
+  color: var(--text-Color);
   text-decoration: none;
 
   border-radius: 3rem;
   font-family: 'Work Sans', sans-serif;
+}
+
+/* fa-user-graduate and fa-user-tie a icon */
+
+.fa-user-graduate{
+  color: var(--bg-Color);
+}
+
+.fa-user-tie {
+  color: var(--bg-Color)
 }
