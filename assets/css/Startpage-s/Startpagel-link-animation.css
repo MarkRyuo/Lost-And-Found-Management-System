@@ -45,5 +45,6 @@
 .fa-user-secret:hover{
   color: var(--hover-text-Color);
   font-size: 5rem;
-  transition: 1s;
+  transition: all 1s;
+  margin-right: 1vw;
 }
