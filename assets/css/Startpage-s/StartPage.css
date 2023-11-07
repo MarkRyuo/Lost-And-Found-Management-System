@@ -1,0 +1,115 @@
+/* Link Font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --box-Color: hsla(343, 59%, 46%, 0.78);
+  --bg-Color: hsl(348, 100%, 97%);
+  --shadow-box: hsl(0, 100%, 31%);
+  --text-Color: #3d0918;
+
+}
+
+body {
+  
+  background: url(/assets/Images/Bsu\ site.jpg);
+  background-repeat: no-repeat;
+  background-size:1940px;
+  float: right;
+}
+
+aside {
+  /* border: 1px solid black; */
+  /* Flexx */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 10rem;
+
+  width: 35vw;
+  height: 100vh;
+
+  background-color: var(--box-Color);
+  color: white;
+
+  /* border radius */
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+  position: relative;
+}
+
+
+/* fa-user-secret Admin Sign-in */ 
+
+.direct-Admin{
+  margin-left: auto;
+  color: var(--bg-Color);
+}
+.fa-user-secret {
+  font-size: 2.5rem;
+}
+
+/* lost-Found-h1 */
+
+.lost-Found-h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+
+/* Section here */
+
+.Find-who {
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content:space-between ; */
+  gap: 4rem;
+  height: 45vh;
+  width: 30vw;
+
+}
+
+.Are-you-a {
+  font-size: 1.7rem ;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.find-Or {
+  font-size: 1.7rem ;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.find-Link {
+  /* background-color: var(--bg-Color); */
+
+  font-size: 2.4rem;
+  color: var(--text-Color);
+  text-decoration: none;
+
+  border-radius: 3rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* fa-user-graduate and fa-user-tie a icon */
+
+.fa-user-graduate{
+  color: var(--bg-Color);
+}
+
+.fa-user-tie {
+  color: var(--bg-Color)
+}

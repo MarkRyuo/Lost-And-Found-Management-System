@@ -1,0 +1,50 @@
+
+:root{
+  --hover-Color: #FFF0F3;
+  --hover-text-Color: #590D22;
+}
+
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.find-Link {
+  position: relative;
+}
+
+.find-Link::after {
+  content: "";
+  position: absolute;
+  background-color: var(--hover-Color);
+  width: 0;
+  height: 0.2rem;
+  left: 0;
+  bottom: -10px;
+  transition: all 1s;
+
+}
+
+.find-Link:hover::after{
+  width: 100%;
+}
+
+.find-Link:hover {
+  color:var(--hover-Color);
+  transition: 2s;
+}
+
+
+/* direct-Admin */
+
+.fa-user-secret:hover{
+  color: var(--hover-text-Color);
+  font-size: 5rem;
+  transition: all 1s;
+  margin-right: 1vw;
+}
