@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Register</title>
+    <link rel="stylesheet" href="studentregister.css">
+    <link rel="stylesheet" href="studentlogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500&family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <?php
@@ -62,16 +67,34 @@
             }
         }
     ?>
-    <form action="studentregistration.php" method="post">
-        <div>Sr Code:</div>
-        <input type="text" name="srcode" placeholder="Sr code">
-        <div>Email Address:</div>
-        <input type="email" name="email" placeholder="Email Address">
-        <div>Password:</div>
-        <input type="password" name="password" placeholder="Password">
-        <div>Repeat Password:</div>
-        <input type="password" name="repeat_password" placeholder="Repeat Password"> </br>
-        <input type="submit" value="Register" name="submit">
-    </form>
+
+        <div class="right-section">
+            <h2>Sign in</h2>
+        </div>
+
+    <div class="container">
+
+        <div class="student-register">Student Register</div>
+
+        <form action="studentregistration.php" method="post">
+
+            <div class="Sr-code">Sr Code:</div>
+            <input class="user" type="text" name="srcode" placeholder="Sr code">
+
+            <div class="Sr-code">Email Address:</div>
+            <input class="user" type="email" name="email" placeholder="Email Address">
+
+            <div class="Sr-code">Password:</div>
+            <input class="user" type="password" name="password" placeholder="Password">
+
+            <div class="Sr-code">Repeat Password:</div>
+            <input class="user" type="password" name="repeat_password" placeholder="Repeat Password"> </br>
+
+            <input class="button-register" type="submit" value="Register" name="submit">
+
+            <button class="Create-Button"><a href="studentlogin.php">Sign in</a></button>
+        </form>
+    </div>
+    
 </body>
 </html>

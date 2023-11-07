@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>POTANGINAMO PUMASOK KANG HAYOP KA</h1>
+    <h1>Lost and Found Management System</h1>
+    <h2>STUDENT DASHBOARD</h2>
 </body>
 </html>
