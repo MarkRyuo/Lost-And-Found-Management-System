@@ -25,6 +25,7 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  gap: 10rem;
 
   width: 35vw;
   height: 100vh;
@@ -35,4 +36,26 @@ aside {
   /* border radius */
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
+
+  position: relative;
 }
+
+
+/* fa-user-secret Admin Sign-in */  
+
+
+
+
+/* Section here */
+
+.Find-who {
+  border: 1px solid black;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+
