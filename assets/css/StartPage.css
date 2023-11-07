@@ -6,6 +6,7 @@
 :root {
   --box-Color: hsla(343, 79%, 36%, 78%);
   --bg-Color: hsl(348, 100%, 97%);
+  --shadow-box: hsl(0, 100%, 31%);
 
 }
 
@@ -17,7 +18,7 @@ body {
 }
 
 aside {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* Flexx */
   display: flex;
   flex-direction: column;
@@ -31,6 +32,6 @@ aside {
   color: white;
 
   /* border radius */
-  border-top-left-radius: 60px;
-  border-bottom-left-radius: 60px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
