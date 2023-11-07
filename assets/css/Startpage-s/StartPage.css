@@ -1,3 +1,8 @@
+/* Link Font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -56,6 +61,7 @@ aside {
 .lost-Found-h1 {
   font-size: 2.6rem;
   text-align: center;
+  font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -78,10 +84,12 @@ aside {
 
 .Are-you-a {
   font-size: 1.7rem ;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .find-Or {
   font-size: 1.7rem ;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .find-Link {
@@ -92,4 +100,5 @@ aside {
   text-decoration: none;
 
   border-radius: 3rem;
+  font-family: 'Work Sans', sans-serif;
 }
