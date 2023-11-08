@@ -1,17 +1,31 @@
 /* import for Fonts */
 
 
+
+:root {
+  --bg-Color: #FFF0F3;
+  --bg-color-Aside: hsl(343, 79%, 36%)
+
+}
+
+
 * {
   margin: 0;
   padding: 0;
 }
 
+body {
+  background-color: var(--bg-Color);
+}
+
 aside {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   
   display: flex;
   width: 15vw;
   height: 100vh;
+
+  background-color: var(--bg-color-Aside);
 
   
 }
@@ -27,4 +41,14 @@ aside {
   height: 60vh;
 
   border: 1px solid black;
+}
+
+
+/* Navigation Here */
+
+.navigation {
+  /* border: 1px solid black; */
+  width: 100vw;
+  height: 10vh;
+  background-color: var(--bg-color-Aside);
 }
