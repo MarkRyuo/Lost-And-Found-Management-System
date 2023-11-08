@@ -15,11 +15,11 @@
 require_once "database.php";
 
 if (isset($_POST["login"])) {
-    if (isset($_POST["srcode"]) && isset($_POST["password"])) {
-        $srcode = mysqli_real_escape_string($conn, trim($_POST["srcode"]));
+    if (isset($_POST["admin"]) && isset($_POST["password"])) {
+        $admin = mysqli_real_escape_string($conn, trim($_POST["admin"]));
         $password = mysqli_real_escape_string($conn, trim($_POST["password"]));
 
-        $sql = "SELECT * FROM tbl_student WHERE srcode = '$srcode'";
+        $sql = "SELECT * FROM tbl_admin WHERE admin = '$admin'";
         $result = mysqli_query($conn, $sql);
         $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
@@ -31,7 +31,7 @@ if (isset($_POST["login"])) {
                 echo "<div class='alert alert-danger'>Password does not match</div>";
             }
         } else {
-            echo "<div class='alert alert-danger'>Srcode does not match</div>";
+            echo "<div class='alert alert-danger'>Security Username does not match</div>";
         }
     }
 }
@@ -41,19 +41,19 @@ if (isset($_POST["login"])) {
     </div>
 
     <div class="StudentLogin">
-        <div class="student-text">Student Login</div>
+        <div class="student-text">Admin Login</div>
 
-            <form action="studentlogin.php" method="post">
+            <form action="adminlogin.php" method="post">
 
-            <div class="Sr-code">Srcode:</div>
-            <input class="user" type="text"  name="srcode" placeholder="Srcode" >
+            <div class="Sr-code">Admin Username:</div>
+            <input class="user" type="text"  name="admin" placeholder="Admin Username" >
 
             <div class="Password">Password:</div>
             <input class="password" type="password" name="password" placeholder="Password"> </br>
 
             <input class="Login-Button" type="submit" value="Login" name="login">
             <button class="Cancel-Button" type="button">Exit</button>
-            <button class="Create-Button"><a href="studentregistration.php">Create Account</a></button>
+            <button class="Create-Button"><a href="adminregister.php">Create Account</a></button>
     </form>
     </div>
     
