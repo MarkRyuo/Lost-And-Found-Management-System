@@ -54,4 +54,7 @@ aside {
   width: 100vw;
   height: 10vh;
   background-color: var(--bg-color-Aside);
+  display: flex;
+  gap: 20vw;
+  align-items: center;
 }

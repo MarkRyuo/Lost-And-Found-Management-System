@@ -59,69 +59,48 @@ button {
 
  /* Logout */
 
- .Btn {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 45px;
-  height: 45px;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
+ .log-Out {
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  /* border: 3px solid black; */
+  border-radius: 2px;
   position: relative;
-  overflow: hidden;
-  transition-duration: .3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-  background-color: rgb(255, 65, 65);
+  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1); */
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
 }
 
-/* plus sign */
-.sign {
-  width: 100%;
-  transition-duration: .3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sign svg {
-  width: 17px;
-}
-
-.sign svg path {
-  fill: white;
-}
-/* text */
-.text {
+.log-Out:before {
+  transition: 0.5s all ease;
   position: absolute;
-  right: 0%;
-  width: 0%;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
   opacity: 0;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 600;
-  transition-duration: .3s;
-}
-/* hover effect on button width */
-.Btn:hover {
-  width: 125px;
-  border-radius: 40px;
-  transition-duration: .3s;
+  content: '';
+  background-color: black;
+  z-index: -1;
 }
 
-.Btn:hover .sign {
-  width: 30%;
-  transition-duration: .3s;
-  padding-left: 20px;
+.log-Out:hover, .log-Out:focus {
+  color: white;
 }
-/* hover effect button's text */
-.Btn:hover .text {
+
+.log-Out:hover:before, .log-Out:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
   opacity: 1;
-  width: 70%;
-  transition-duration: .3s;
-  padding-right: 10px;
 }
-/* button click effect*/
-.Btn:active {
-  transform: translate(2px ,2px);
+
+.log-Out:active {
+  transform: scale(0.9);
 }
