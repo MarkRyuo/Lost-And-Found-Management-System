@@ -3,13 +3,14 @@
   padding: 0;
 }
 
-
+/* Font Link's */
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
 
 :root {
   --box-Color: hsl(347, 100%, 98%);
   --b-Color: hsl(343, 78%, 18%);
   --color: #333;
+  --text-Color: hsl(342, 73%, 7%);
 }
 
 body {
@@ -35,20 +36,26 @@ body {
 
 h1 {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4rem;
+  color: var(--text-Color);
 }
 
 p {
   max-width: 52ch;
   line-height: 1.5;
   padding: 1em;
+  font-size: 1rem;
+}
+
+.con-Text {
+  font-size: 2.2rem;
 }
 
 a {
   display: inline-block;
   padding: 1em 3.5em;
   background-color: var(--color);
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 0.3em;
@@ -95,7 +102,7 @@ h3 {
 .img {
   width: 90%;
   height: 200px;
-  background-color: lightgrey;
+  background-color: var(--box-Color);
   background-size: cover;
   background-position: center;
   margin-top: 20px;
