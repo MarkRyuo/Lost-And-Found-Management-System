@@ -55,6 +55,11 @@ aside {
   height: 10vh;
   background-color: var(--bg-color-Aside);
   display: flex;
-  gap: 20vw;
+  justify-content: flex-end;
   align-items: center;
+}
+
+.lost-and-found {
+  margin-right: 40vw;
+  color: #ffffff;
 }
