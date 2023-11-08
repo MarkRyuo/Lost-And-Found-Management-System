@@ -13,7 +13,10 @@
   --text-Color: hsl(342, 73%, 7%);
 }
 
-/* 
+/* html{
+  scroll-behavior: smooth;
+} */
+
 body {
   font-family: "Red Hat Text", sans-serif;
 }
