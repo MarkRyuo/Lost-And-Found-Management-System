@@ -1,0 +1,30 @@
+/* import for Fonts */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  border: 1px solid black;
+  
+  display: flex;
+  width: 15vw;
+  height: 100vh;
+
+  
+}
+
+.nav-links {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+
+  width: 15vw;
+  height: 60vh;
+
+  border: 1px solid black;
+}
