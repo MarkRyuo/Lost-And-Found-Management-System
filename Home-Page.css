@@ -1,6 +1,14 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
 
 :root {
+  --box-Color: hsl(347, 100%, 98%);
+  --b-Color: hsl(343, 78%, 18%);
   --color: #333;
 }
 
@@ -53,7 +61,7 @@ a {
 .other {
   width: 100%;
   min-height: 60vh;
-  background-color: var(--color);
+  background-color: var(--b-Color);
 }
 
 .second {
@@ -75,7 +83,7 @@ h3 {
 .item {
   display: flex;
   max-width: 320px;
-  background-color: white;
+  background-color: var(--box-Color);
   flex-direction: column;
   align-items: center;
   border-radius: 0.5em;
