@@ -1,7 +1,8 @@
 
 
 :root {
-  --bg-color-Aside: hsl(343, 79%, 36%)
+  --bg-color-Aside: hsl(343, 79%, 36%);
+  --hover-color: #590D22;
 }
 
 
@@ -19,14 +20,14 @@ button {
   padding: 15px 25px;
   border: unset;
   border-radius: 0;
-  color: #212121;
+  color: white;
   z-index: 1;
   background: var(--bg-color-Aside);
   position: relative;
   font-weight: 1000;
-  font-size: 17px;
-  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  font-size: 1.2rem;
+  /* -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27); */
+  /* box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27); */
   transition: all 250ms;
   /* overflow: hidden; */
   width: 16vw;
@@ -39,8 +40,8 @@ button {
   left: 0;
   height: 100%;
   width: 0;
-  border-radius: 0;
-  background-color: #212121;
+  border-radius: 15px;
+  background-color: var(--hover-color);
   z-index: -1;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
   box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
