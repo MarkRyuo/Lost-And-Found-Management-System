@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Register</title>
+    <title>Admin Register</title>
     <link rel="stylesheet" href="style/studentregister.css">
     <link rel="stylesheet" href="studentlogin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,7 +93,7 @@
 
             <input class="button-register" type="submit" value="Register" name="submit">
 
-            <button class="Create-Button"><a href="securitylogin.php">Sign in</a></button>
+            <button class="Create-Button"><a href="adminlogin.php">Sign in</a></button>
         </form>
     </div>
     
