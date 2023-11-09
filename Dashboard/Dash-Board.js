@@ -1,23 +1,12 @@
-function navigateToUserPage() {
-  window.location.href = "Link here";
-}
 
-function navigateToDashboardPage() {
-  window.location.href = "Link here";
-}
+// Code For LogOut
+var logOut = document.getElementById("logOut");
 
-function navigateToViewLostItemsPage() {
-  window.location.href = "Link here";
-}
+logOut.addEventListener("click", function() {
+  window.location.href = "/assets/Home-Page/Home-Page.html";
+});
 
-function navigateToReportMissingItemsPage() {
-  window.location.href = "Link here";
-}
 
-function navigateToClaimConfirmationPage() {
-  window.location.href = "Link here";
-}
 
-function navigateToHomePage() {
-  window.location.href = "Link here";
-}
+
+
