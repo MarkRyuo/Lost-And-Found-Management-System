@@ -17,3 +17,7 @@ function navigateToReportMissingItemsPage() {
 function navigateToClaimConfirmationPage() {
   window.location.href = "Link here";
 }
+
+function navigateToHomePage() {
+  window.location.href = "Link here";
+}
