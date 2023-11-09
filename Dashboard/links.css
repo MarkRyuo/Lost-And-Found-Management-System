@@ -60,12 +60,12 @@ button {
  /* Logout */
 
  .log-Out {
-  font-size: 18px;
+  font-size: 1.2rem;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: inline-block;
   text-align: center;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 0.7em 2em;
   /* border: 3px solid black; */
   border-radius: 2px;
