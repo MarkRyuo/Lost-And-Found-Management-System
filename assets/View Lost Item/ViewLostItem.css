@@ -1,0 +1,30 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Design For Header/Navigation */
+
+.parent-Nav {
+  border: 1px solid black;
+  display: flex;
+  height: 9vh;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+
+
+/* Design for Table's */
+.parent-Table {
+  border: 1px solid black;
+  border-radius: 20px;
+  height: 20vh;
+}
+
+.table-Header th {
+  border: 1px solid black;
+}
