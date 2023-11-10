@@ -33,7 +33,7 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5vh;
+  gap: 4vh;
 
   width: 15vw;
   height: 100vh;
@@ -69,6 +69,11 @@ aside {
 
 .Logo h1 {
   text-align: center;
+}
+
+.Logo p {
+  font-size: 0.9rem;
+  margin-right: auto;
 }
 
 /* Button Navigation */
