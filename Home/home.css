@@ -1,0 +1,145 @@
+/* Import Font */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-Color: hsl(347, 100%, 98%);
+  --bg-color-Aside: hsl(343, 79%, 36%);
+  --bg-color-Aside-logo: hsl(343, 77%, 31%);
+  --bg-color-Aside-shadow: hsl(343, 78%, 18%);
+}
+
+body {
+  background-color: var(--bg-Color);
+
+  display: flex;
+  gap: 2vw;
+}
+
+aside {
+  /* border: 1px solid black; */
+
+
+
+  background-color: var(--bg-color-Aside);
+  box-shadow: 3px 10px 15px var(--bg-color-Aside-shadow);
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8vh;
+
+  width: 15vw;
+  height: 100vh;
+
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+
+
+}
+
+/* Logo */
+
+.Logo {
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 17vh;
+
+  background-color: var(--bg-color-Aside-logo);
+  color: #ffffff;
+  border-top-right-radius: 40px;
+  box-shadow: 1px 1px 15px var(--bg-color-Aside-shadow);
+}
+
+/* Button Navigation */
+.button-Nav {
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+
+  height: 65vh;
+  width: 10vw;
+
+}
+
+/* Icon's */
+
+.fa-solid, .fa-regular {
+  font-size: 1.8rem;
+}
+
+
+
+
+
+/* Button design code */
+.btn {
+  width: 140px;
+  height: 60px;
+  /* background: linear-gradient(to top, #00154c, #12376e, #23487f); */
+  background: var(--bg-color-Aside);
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); */
+  overflow: hidden;
+}
+
+.btn span {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: top 0.5s;
+}
+
+.btn-text-one {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two {
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn:hover .btn-text-one {
+  top: -100%;
+}
+
+.btn:hover .btn-text-two {
+  top: 50%;
+}
+
+
+/* Main */
+
+main {
+  border: 1px solid black;
+  margin-top: 3vh;
+  width: 80vw;
+  height: 90vh;
+}
