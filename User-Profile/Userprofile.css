@@ -1,0 +1,59 @@
+/* Import Font Here */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navigation Design */
+.parent-Nav {
+  border: 1px solid black;
+  display: flex;
+  height: 9vh;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+/* Main and Section Design */
+.parent-User {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+
+  border: 1px solid black ;
+
+  width: 50vw;
+  height: 50vh;
+
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  border: 1px solid black;
+
+  width: 20vw;
+  height: 25vh;
+  gap: 1.5rem;
+}
+
+.input input {
+  width: 13rem;
+  height: 1.5rem;
+}
+
+/* fa-user-shield icon */
+
+.fa-user-shield {
+
+  font-size: 2.5rem; /* Not sure */
+}
