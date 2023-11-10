@@ -15,7 +15,13 @@ viewlostItem.addEventListener("click", function() {
   window.location.href = "/View Lost Item/ViewlostItem.html";
 });
 
+// code for reportMissing
 
+var reportMissing = document.getElementById("reportMissing");
+
+reportMissing.addEventListener("click", function() {
+  window.location.href = "#";
+});
 
 
 
