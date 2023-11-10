@@ -44,6 +44,10 @@ aside {
 
 }
 
+hr {
+  color: hsl(343, 76%, 33%) ;
+}
+
 /* Logo */
 
 .Logo {
