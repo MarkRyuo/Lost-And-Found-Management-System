@@ -33,7 +33,7 @@ aside {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  gap: 8vh;
+  gap: 5vh;
 
   width: 15vw;
   height: 100vh;
@@ -56,15 +56,19 @@ aside {
 
   height: 17vh;
 
-  background-color: var(--bg-color-Aside-logo);
+  /* background-color: var(--bg-color-Aside-logo); */
   color: #ffffff;
   border-top-right-radius: 40px;
-  box-shadow: 1px 1px 15px var(--bg-color-Aside-shadow);
+  /* box-shadow: 1px 1px 15px var(--bg-color-Aside-shadow); */
 }
 
 .Logo h1 img {
   width: 40px;
   color: #fff;
+}
+
+.Logo h1 {
+  text-align: center;
 }
 
 /* Button Navigation */
