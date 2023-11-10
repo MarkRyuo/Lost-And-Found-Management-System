@@ -1,10 +1,13 @@
+/*Eto ay simpleng javascript lamang*/
 
-// Code For LogOut
-var logOut = document.getElementById("logOut");
+// Code For User
+var User = document.getElementById("User");
 
-logOut.addEventListener("click", function() {
-  window.location.href = "/assets/Home-Page/Home-Page.html";
+User.addEventListener("click", function() {
+  window.location.href = "/User-Profile/userProfile.html";
 });
+
+// 
 
 
 
