@@ -23,6 +23,14 @@ reportMissing.addEventListener("click", function() {
   window.location.href = "#";
 });
 
+// code for claimConformation
+var rclaimConformation = document.getElementById("claimConformation");
+
+claimConformation.addEventListener("click", function() {
+  window.location.href = "#";
+});
+
+
 
 
 
