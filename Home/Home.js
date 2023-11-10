@@ -8,7 +8,6 @@ User.addEventListener("click", function() {
 });
 
 // code for viewlostItem
-
 var viewlostItem = document.getElementById("viewlostItem");
 
 viewlostItem.addEventListener("click", function() {
@@ -16,7 +15,6 @@ viewlostItem.addEventListener("click", function() {
 });
 
 // code for reportMissing
-
 var reportMissing = document.getElementById("reportMissing");
 
 reportMissing.addEventListener("click", function() {
