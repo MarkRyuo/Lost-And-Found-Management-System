@@ -45,7 +45,7 @@ aside {
 }
 
 hr {
-  color: hsl(343, 76%, 33%) ;
+  color: hsla(343, 76%, 30%, 0.613) ;
 }
 
 /* Logo */
