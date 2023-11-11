@@ -36,7 +36,7 @@
             }
             
             require_once "database.php";
-            $sql = "SELECT * FROM tbl_student WHERE emailaddress = '$email'";
+            $sql = "SELECT * FROM tb_studentlogin WHERE emailaddress = '$email'";
             $result = mysqli_query($conn, $sql);
             $rowCount = mysqli_num_rows($result);
             if ($rowCount > 0) {
@@ -50,7 +50,7 @@
             }
             else{
 
-                $sql = "INSERT INTO tbl_student (srcode, emailaddress, password) VALUES (?, ?, ?)";
+                $sql = "INSERT INTO tb_studentlogin (srcode, emailaddress, password) VALUES (?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
 
                 if (mysqli_stmt_prepare($stmt, $sql)) {

@@ -19,7 +19,7 @@ if (isset($_POST["login"])) {
         $srcode = mysqli_real_escape_string($conn, trim($_POST["srcode"]));
         $password = mysqli_real_escape_string($conn, trim($_POST["password"]));
 
-        $sql = "SELECT * FROM tbl_student WHERE srcode = '$srcode'";
+        $sql = "SELECT * FROM tb_studentlogin WHERE srcode = '$srcode'";
         $result = mysqli_query($conn, $sql);
         $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 

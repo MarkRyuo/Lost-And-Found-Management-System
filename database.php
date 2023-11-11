@@ -1,11 +1,11 @@
 <?php
 
 $hostname = "localhost";
-$username = "root";
-$password = "";
-$database = "db_nt3102";
+$dbUser = "root";
+$dbPassword = "";
+$dbName = "db_nt3102";
 
-$conn = mysqli_connect($hostname, $username, $password, $database);
+$conn = mysqli_connect($hostname, $dbUser, $dbPassword, $dbName);
 
 if (!$conn) {
     die("Something wend wrong");
