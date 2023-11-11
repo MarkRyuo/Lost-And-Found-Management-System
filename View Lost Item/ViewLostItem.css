@@ -6,8 +6,19 @@
 
 /* Design For Header/Navigation */
 
-.parent-Nav {
+.Tables {
   border: 1px solid black;
+  
+  width: 50vw;
+  height: 70vh;
+}
+
+.nav {
+  border: 1px solid black;
+}
+
+.parent-Nav {
+  /* border: 1px solid black; */
   display: flex;
   height: 9vh;
   align-items: center;
@@ -23,6 +34,13 @@
   border: 1px solid black;
   border-radius: 20px;
   height: 20vh;
+  width: 40vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
 }
 
 .table-Header th {
