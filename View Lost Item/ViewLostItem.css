@@ -11,6 +11,11 @@
   
   width: 50vw;
   height: 70vh;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4vh;
 }
 
 .nav {
@@ -18,11 +23,11 @@
 }
 
 .parent-Nav {
-  /* border: 1px solid black; */
+  
   display: flex;
   height: 9vh;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 
 }
@@ -33,8 +38,8 @@
 .parent-Table {
   border: 1px solid black;
   border-radius: 20px;
-  height: 20vh;
-  width: 40vw;
+  height: 50vh;
+  width: 50vw;
 
   display: flex;
   flex-wrap: wrap;
