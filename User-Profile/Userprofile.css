@@ -1,19 +1,42 @@
 /* Import Font Here */
 
 
+:root {
+  --bg-color-nav: hsl(343, 79%, 36%);
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
+
+/* Main */
+
+.main-User {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10vh;
+  
+  border: 1px solid black;
+  margin-top: 1vh;
+  width: 80vw;
+  height: 90vh; 
+}
+
 /* navigation Design */
 .parent-Nav {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+
   display: flex;
-  height: 9vh;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  height: 9vh;
+  background-color: var(--bg-color-nav);
+  border-radius: 30px;
 
 }
 

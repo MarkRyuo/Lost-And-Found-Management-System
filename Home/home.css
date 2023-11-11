@@ -155,10 +155,10 @@ hr {
 }
 
 
-/* Main */
+/* main-Home */
 
-main {
-  border: 1px solid black;
+.main-Home {
+  /* border: 1px solid black; */
   margin-top: 3vh;
   width: 80vw;
   height: 90vh;
