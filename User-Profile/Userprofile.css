@@ -19,7 +19,8 @@
   flex-wrap: wrap;
   gap: 1vh;
   
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  
   margin-top: 1vh;
   width: 80vw;
   height: 90vh; 
@@ -47,9 +48,9 @@
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: space-evenly;
+  gap: 10vh;
 
-  border: 1px solid black ;
+  /* border: 1px solid black ; */
 
   width: 80vw;
   height: 70vh;
@@ -65,14 +66,21 @@
   
   border: 1px solid black;
 
-  width: 20vw;
-  height: 25vh;
+  width: 30vw;
+  height: 35vh;
   gap: 1.5rem;
 }
 
 .input input {
-  width: 13rem;
+  width: 14rem;
   height: 1.5rem;
+}
+
+
+/* user-button-Log-out */
+.user-button-Log-out {
+  margin-top: 2vh;
+  margin-left: auto;
 }
 
 /* fa-user-shield icon */
