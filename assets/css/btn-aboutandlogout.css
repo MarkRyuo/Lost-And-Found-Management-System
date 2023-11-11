@@ -1,3 +1,10 @@
+
+:root {
+  --box-Color: hsl(343, 78%, 18%);
+}
+
+
+
 .box {
   width: 140px;
   height: auto;
@@ -47,14 +54,14 @@
 }
 
 .box:hover:before {
-  border-color: #ffffff;
+  border-color: var(--box-Color);
   height: 100%;
   transform: translateX(0);
   transition: .3s transform linear, .3s height linear .3s;
 }
 
 .box:hover:after {
-  border-color: #ffffff;
+  border-color: var(--box-Color);
   height: 100%;
   transform: translateX(0);
   transition: .3s transform linear, .3s height linear .5s;
@@ -67,4 +74,8 @@ button {
   outline: none;
   border: none;
   background: transparent;
+}
+
+.btn-color-Logout {
+  color: black;
 }
