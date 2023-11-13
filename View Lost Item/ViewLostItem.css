@@ -38,14 +38,15 @@ body {
   height: 90vh; 
 }
 
-.nav {
+
+/* .nav {
   border: 1px solid black;
-}
+} */
 
 .parent-Nav {
   
   display: flex;
-  height: 9vh;
+  height: 10vh;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -63,9 +64,10 @@ body {
 /* Design for Table's */
 .parent-Table {
   border: 1px solid black;
-  border-radius: 20px;
+  /* border-radius: 20px; */
+
   height: 50vh;
-  width: 75vw;
+  width: 80vw;
 
   display: flex;
   flex-wrap: wrap;
@@ -75,5 +77,19 @@ body {
 }
 
 .table-Header th {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+
+  width: 20vw;
+  height: 5vh;
+}
+
+.parent-Table .table-Header th {
+  background-color: var(--bg-color-Aside);
+  color: #fff;
+}
+
+.parent-Table tr input {
+
+  width: 20vw;
+  height: 5vh;
 }
