@@ -9,6 +9,7 @@
 
 body {
   display: flex;
+  gap: 1.6rem;
   
 }
 
