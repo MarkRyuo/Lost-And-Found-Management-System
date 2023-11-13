@@ -15,15 +15,16 @@ body {
 /* Design For Header/Navigation */
 
 .Tables {
-  border: 1px solid black;
-  
-  width: 50vw;
-  height: 70vh;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 4vh;
+  gap: 1vh;
+  
+  border: 1px solid black;
+  
+  margin-top: 0.5vh;
+  width: 80vw;
+  height: 90vh; 
 }
 
 .nav {
