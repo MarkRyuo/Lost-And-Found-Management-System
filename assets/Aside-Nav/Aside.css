@@ -54,10 +54,20 @@ hr {
   /* box-shadow: 1px 1px 15px var(--bg-color-Aside-shadow); */
   font-family: 'Inconsolata', monospace;
 }
-
-.Logo h1 img {
-  width: 40px;
+/* Logo's alignment */
+.logo-align img {
+  width: 50px;
   color: #fff;
+}
+
+.logo-align {
+  border: 1px solid black;
+
+  display: flex;
+  height: 20vh;
+  flex-wrap: wrap;
+  align-content: center;
+  
 }
 
 .Logo h1 {
