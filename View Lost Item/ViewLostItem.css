@@ -19,7 +19,7 @@
 body {
   background-color: var(--bg-Color) ;
   display: flex;
-  gap: 1.6rem;
+  gap: 2rem;
   
 }
 
