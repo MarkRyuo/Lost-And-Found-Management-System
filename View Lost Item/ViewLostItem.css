@@ -17,7 +17,7 @@
 }
 
 body {
-  background-color: ;
+  background-color: var(--bg-Color) ;
   display: flex;
   gap: 1.6rem;
   
@@ -49,6 +49,12 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  background-color: var(--bg-color-Aside);
+  color: #fff;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
 
 }
 
