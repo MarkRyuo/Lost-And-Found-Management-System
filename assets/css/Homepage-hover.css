@@ -1,10 +1,18 @@
+
+
+:root {
+  --bg-color-Btn: hsl(343, 79%, 36%);
+  --bg-hover: hsl(347, 100%, 98%);
+}
+
+
 button {
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
-  color: #212121;
+  color: #fff;
   z-index: 1;
-  background: #e8e8e8;
+  background: var(--bg-color-Btn);
   position: relative;
   font-weight: 1000;
   font-size: 17px;
@@ -22,7 +30,7 @@ button {
   height: 100%;
   width: 0;
   border-radius: 15px;
-  background-color: #212121;
+  background-color: var(--bg-hover);
   z-index: -1;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
   box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);

@@ -93,7 +93,7 @@ h3 {
 
 .item {
   display: flex;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 50vh;
   max-width: 320px;
   background-color: var(--box-Color);
@@ -136,3 +136,7 @@ h3 {
 
 /* a link */
 
+.container .item button a {
+ background-color: transparent;
+ color: #000;
+}
