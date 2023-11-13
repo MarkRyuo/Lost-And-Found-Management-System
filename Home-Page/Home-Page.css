@@ -93,6 +93,8 @@ h3 {
 
 .item {
   display: flex;
+  border: 1px solid black;
+  height: 50vh;
   max-width: 320px;
   background-color: var(--box-Color);
   flex-direction: column;
@@ -130,3 +132,7 @@ h3 {
   flex-direction: row;
   gap: 1.6em;
 }
+
+
+/* a link */
+
