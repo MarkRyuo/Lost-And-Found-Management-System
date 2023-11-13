@@ -56,21 +56,21 @@ hr {
 }
 /* Logo's alignment */
 .logo-align img {
-  width: 55px;
+  width: 50px;
   color: #fff;
 }
 
 .logo-align {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   display: flex;
   height: 20vh;
   flex-wrap: wrap;
-  align-content: center;
+  align-items: center;
   
 }
 
-.Logo h1 {
+.logo-align h1 {
   text-align: center;
 }
 
