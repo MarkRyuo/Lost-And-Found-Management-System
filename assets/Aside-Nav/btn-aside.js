@@ -18,7 +18,7 @@ viewlostItem.addEventListener("click", function() {
 var reportMissing = document.getElementById("reportMissing");
 
 reportMissing.addEventListener("click", function() {
-  window.location.href = "#";
+  window.location.href = "/ReportMissing/ReportMissing.html";
 });
 
 // code for claimConformation
