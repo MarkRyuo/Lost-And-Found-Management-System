@@ -8,5 +8,39 @@
 body {
   display: flex;
 
-  
+  gap: 2vw;
+}
+
+/* Main - parent-Report-Missing */
+.parent-Report-Missing {
+  border: 1px solid black;
+
+  width: 80vw;
+  height: 70vh;
+}
+
+
+/* nav-Report ---- navigation here */
+
+.nav-Report {
+  border: 1px solid black;
+
+  display: flex;
+  align-items: center;
+
+}
+
+/* report-section */
+
+.report-section {
+  border: 1px solid black;
+
+  width: 50vw;
+  height: 40vh;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3vh;
 }
