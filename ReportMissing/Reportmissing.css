@@ -8,14 +8,14 @@
 body {
   display: flex;
 
-  gap: 2vw;
+  gap: 1.3vw;
 }
 
 /* Main - parent-Report-Missing */
 .parent-Report-Missing {
   border: 1px solid black;
 
-  width: 80vw;
+  width: 82vw;
   height: 70vh;
 
   margin-top: 1vh;
@@ -29,6 +29,8 @@ body {
 
   display: flex;
   align-items: center;
+
+  height: 10vh;
 
 }
 
