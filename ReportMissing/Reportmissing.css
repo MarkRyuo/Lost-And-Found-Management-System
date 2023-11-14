@@ -52,7 +52,7 @@ body {
 }
 
 .report-missing {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   display: flex;
   gap: 1vw;
