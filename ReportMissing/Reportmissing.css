@@ -26,7 +26,10 @@ body {
   border: 1px solid black;
 
   width: 82vw;
-  height: 70vh;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  gap: 15vh;
 
   margin-top: 1vh;
 }
