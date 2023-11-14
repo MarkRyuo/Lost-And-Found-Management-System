@@ -37,6 +37,10 @@ body {
 .nav-Report {
   border: 1px solid black;
 
+  background-color: var(--bg-color-Aside);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
   display: flex;
   align-items: center;
 
