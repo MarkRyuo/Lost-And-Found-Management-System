@@ -38,6 +38,7 @@ body {
   /* border: 1px solid black; */
 
   background-color: var(--bg-color-Aside);
+  color: #fff;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
@@ -49,6 +50,12 @@ body {
   height: 10vh;
 
 }
+
+.report-missing {
+  border: 1px solid black;
+  display: flex;
+}
+
 
 /* report-section */
 
