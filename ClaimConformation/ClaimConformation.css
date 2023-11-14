@@ -119,13 +119,11 @@ body {
 }
 
 .sec-Table td .button-claim {
-  /* background-color: aqua; */
-  border: 1px solid black;
 
   width: 5vw;
   height: 5vh;
 
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 
