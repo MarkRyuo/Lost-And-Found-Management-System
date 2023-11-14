@@ -68,8 +68,8 @@ body {
 .report-section {
   border: 1px solid black;
 
-  width: 50vw;
-  height: 40vh;
+  width: 80vw;
+  height: 60vh;
 
   display: flex;
   flex-direction: column;
