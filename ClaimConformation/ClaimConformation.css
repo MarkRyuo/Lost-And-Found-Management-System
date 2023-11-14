@@ -10,7 +10,7 @@
 body {
   display: flex;
 
-  gap: 3vh;
+  gap: 3.2vh;
 
 }
 
@@ -18,11 +18,13 @@ body {
   border: 1px solid black;
 
   height: 70vh;
-  width: 60vw;
+  width: 82vw;
 
   display: flex;
   flex-direction: column;
   gap: 10vh;
+
+  margin-top: 1.5vh;
 
 
 }
