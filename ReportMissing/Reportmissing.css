@@ -16,6 +16,7 @@
 
 body {
   display: flex;
+  background-color: var(--bg-Color);
 
   gap: 1.3vw;
 }
