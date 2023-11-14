@@ -23,7 +23,7 @@ body {
 
 /* Main - parent-Report-Missing */
 .parent-Report-Missing {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   width: 82vw;
   height: 93vh;
