@@ -1,21 +1,36 @@
 
 
+:root {
+  --bg-Color: hsl(347, 100%, 98%);
+  --bg-color-Aside: hsl(343, 79%, 36%);
+  --bg-color-Aside-logo: hsl(343, 77%, 31%);
+  --bg-color-Aside-shadow: hsl(343, 78%, 18%);
+}
+
 .button-claim {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px 15px;
   gap: 15px;
-  background-color: #007ACC;
-  outline: 3px #007ACC solid;
+  background-color: var(--bg-color-Aside);
+  outline: 3px var(--bg-color-Aside) solid;
   outline-offset: -3px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
   transition: 400ms;
+  color: #fff;
+  font-size: 1rem;
+}
+.button .text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
 }
 
-.button-claim .text {
+.button-claim:hover .text {
   color: white;
   font-weight: 700;
   font-size: 1em;
@@ -27,12 +42,8 @@
   background-color: transparent;
 }
 
-.button-claim.text {
-  color: #007ACC;
-}
-
-.button-claim:hover svg path {
-  fill: #007ACC;
+.button-claim:hover .text {
+  color: #000;
 }
 
 
