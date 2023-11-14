@@ -21,6 +21,11 @@
   transition: all 0.3s ease-in-out;
 }
 
+.btn-save i {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
 
 .btn-save:hover {
   background: #000;
@@ -43,4 +48,8 @@
 
 .btn-save:active {
   transform: scale(0.95);
+}
+
+.btn-save .icon-wrapper-1 .icon-wrapper i {
+  font-size: 1rem;
 }
