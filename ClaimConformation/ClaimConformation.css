@@ -117,3 +117,15 @@ body {
   width: 20vw;
   height: 5vh;
 }
+
+.sec-Table td #view {
+  /* background-color: aqua; */
+  border: 1px solid black;
+
+  width: 10vw;
+  height: 5vh;
+
+  border-radius: 20px;
+}
+
+
