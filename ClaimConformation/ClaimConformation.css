@@ -48,8 +48,6 @@ body {
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
 
-  
-
 }
 
 /* div-conformation */
@@ -76,18 +74,18 @@ body {
 
 } */
 
-.sec-table {
+/* .sec-table {
   border: 1px solid black;
 
   width: 27vw;
   height: 12vh;
   
-}
+} */
 
 
 /* Design for Table's */
 .sec-Table {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* border-radius: 20px; */
 
   height: 50vh;
