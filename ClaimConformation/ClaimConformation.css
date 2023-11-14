@@ -16,14 +16,14 @@ body {
 }
 
 .main-Conformation {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   height: 95vh;
   width: 82vw;
 
   display: flex;
   flex-direction: column;
-  gap: 10vh;
+  gap: 15vh;
 
   margin-top: 1.5vh;
 
