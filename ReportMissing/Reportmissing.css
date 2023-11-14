@@ -1,5 +1,10 @@
 /* Import Font Here */
 
 * {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: flex;
 }
