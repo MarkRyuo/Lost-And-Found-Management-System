@@ -6,5 +6,5 @@ kasi kailangan may alert*/
 var Logout = document.getElementById("Logout");
 
 Logout.addEventListener("click", function() {
-  window.location.href = "";
+  window.location.href = "/index.html";
 });
