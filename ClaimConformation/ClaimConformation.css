@@ -54,13 +54,13 @@ body {
 
 /* div-conformation */
 
-/* .div-conformation {
-  border: 1px solid black;
+.div-conformation {
+  /* border: 1px solid black; */
 
   display: flex;
   width: 14vw;
   gap: 0.9vw;
-} */
+}
 
 /* table-Section */
 /* .table-Section {
@@ -118,7 +118,7 @@ body {
   height: 5vh;
 }
 
-.sec-Table td #view {
+.sec-Table td .button-claim {
   /* background-color: aqua; */
   border: 1px solid black;
 

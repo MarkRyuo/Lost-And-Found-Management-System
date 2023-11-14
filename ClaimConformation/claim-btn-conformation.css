@@ -1,0 +1,38 @@
+
+
+.button-claim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 15px;
+  background-color: #007ACC;
+  outline: 3px #007ACC solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button-claim .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+
+.button-claim:hover {
+  background-color: transparent;
+}
+
+.button-claim.text {
+  color: #007ACC;
+}
+
+.button-claim:hover svg path {
+  fill: #007ACC;
+}
+
+
