@@ -54,16 +54,16 @@ body {
 
 /* div-conformation */
 
-.div-conformation {
-  /* border: 1px solid black; */
+/* .div-conformation {
+  border: 1px solid black;
 
   display: flex;
   width: 14vw;
   gap: 0.9vw;
-}
+} */
 
 /* table-Section */
-.table-Section {
+/* .table-Section {
   border: 1px solid black;
 
   width: 80vw;
@@ -74,7 +74,7 @@ body {
   align-content: center;
   justify-content: center;
 
-}
+} */
 
 .sec-table {
   border: 1px solid black;
@@ -82,4 +82,38 @@ body {
   width: 27vw;
   height: 12vh;
   
+}
+
+
+/* Design for Table's */
+.sec-Table {
+  border: 1px solid black;
+  /* border-radius: 20px; */
+
+  height: 50vh;
+  width: 80vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.table-Header th {
+  /* border: 1px solid black; */
+
+  width: 20vw;
+  height: 5vh;
+}
+
+.sec-Table .table-Header th {
+  background-color: var(--bg-color-Aside);
+  color: #fff;
+}
+
+.sec-Table tr input {
+
+  width: 20vw;
+  height: 5vh;
 }
