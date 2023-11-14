@@ -68,7 +68,7 @@ a {
   background-color: var(--color);
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   border-radius: 0.3em;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -139,6 +139,3 @@ h3 {
   flex-direction: row;
   gap: 1.6em;
 }
-
-
-/* a link */
