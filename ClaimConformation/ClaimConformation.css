@@ -9,6 +9,7 @@
 
 body {
   display: flex;
+  background-color: var(--bg-Color);
 
   gap: 3.2vh;
 
@@ -32,7 +33,7 @@ body {
 /* report-missing */
 
 .nav-Conformation {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   display: flex;
   align-items: center;
@@ -40,8 +41,25 @@ body {
   flex-wrap: wrap;
 
   height: 10vh;
+
+  background-color: var(--bg-color-Aside);
+  color: #fff;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
   
 
+}
+
+/* div-conformation */
+
+.div-conformation {
+  /* border: 1px solid black; */
+
+  display: flex;
+  width: 14vw;
+  gap: 0.9vw;
 }
 
 /* table-Section */
