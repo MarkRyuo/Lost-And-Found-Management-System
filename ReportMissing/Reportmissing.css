@@ -87,9 +87,20 @@ body {
 
 .report-section .item-number-wsmall {
   width: 10vw;
-  margin-right: 50vw;
+  margin-right: 45vw;
 }
 
 .report-section .item-name-wsmall {
   margin-right: 50vw;
+}
+
+.subsection-input {
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  height: 15vh;
+  gap: 3vh ;
+
+  margin-right: 50vh;
 }
