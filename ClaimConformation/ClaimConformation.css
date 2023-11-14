@@ -1,0 +1,9 @@
+/* Import Font Here */
+
+:root {
+  --bg-Color: hsl(347, 100%, 98%);
+  --bg-color-Aside: hsl(343, 79%, 36%);
+  --bg-color-Aside-logo: hsl(343, 77%, 31%);
+  --bg-color-Aside-shadow: hsl(343, 78%, 18%);
+}
+
