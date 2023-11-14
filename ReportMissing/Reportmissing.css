@@ -66,7 +66,7 @@ body {
 /* report-section */
 
 .report-section {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   width: 80vw;
   height: 60vh;
@@ -87,7 +87,7 @@ body {
 
 .report-section .item-number-wsmall {
   width: 10vw;
-  margin-right: 45vw;
+  margin-right: 19.5vw;
 }
 
 .report-section .item-name-wsmall {
@@ -102,5 +102,13 @@ body {
   height: 15vh;
   gap: 3vh ;
 
-  margin-right: 50vh;
+  margin-right: 20vh;
+}
+
+/* file-upload input */
+
+.file-upload {
+  /* border: 1px solid black; */
+  font-size: 1rem;
+  margin-right: 9.9vw;
 }
