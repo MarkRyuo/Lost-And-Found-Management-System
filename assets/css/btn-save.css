@@ -1,0 +1,46 @@
+.btn-save {
+  font-family: inherit;
+  font-size: 20px;
+  background: #212121;
+  color: white;
+  fill: rgb(155, 153, 153);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 15px;
+  font-weight: 1000;
+}
+
+.btn-save span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.btn-save:hover {
+  background: #000;
+  bor
+}
+
+btn-save:hover .icon-wrapper {
+  transform: scale(1.25);
+  transition: .5s linear;
+}
+
+btn-save:hover i {
+  transform: translateX(1.2em) scale(1.1);
+  fill: #fff;
+}
+
+btn-save:hover span {
+  opacity: 0;
+  transition: .5s linear;
+}
+
+btn-save:active {
+  transform: scale(0.95);
+}
+
