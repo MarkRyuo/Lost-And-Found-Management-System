@@ -7,3 +7,57 @@
   --bg-color-Aside-shadow: hsl(343, 78%, 18%);
 }
 
+body {
+  display: flex;
+
+}
+
+.main-Conformation {
+  border: 1px solid black;
+
+  height: 70vh;
+  width: 60vw;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+
+
+}
+
+/* report-missing */
+
+.nav-Conformation {
+  border: 1px solid black;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  height: 10vh;
+  
+
+}
+
+/* table-Section */
+.table-Section {
+  border: 1px solid black;
+
+  width: 55vw;
+  height: 40vh;
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.sec-table {
+  border: 1px solid black;
+
+  width: 27vw;
+  height: 12vh;
+  
+}
