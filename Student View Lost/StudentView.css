@@ -1,1 +1,76 @@
 /* Import the Font Here */
+
+
+
+
+
+
+
+.Tables {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10vh;
+  
+  /* border: 1px solid black; */
+  
+  margin-top: 0.5vh;
+  width: 80vw;
+  height: 90vh; 
+}
+
+
+/* .nav {
+  border: 1px solid black;
+} */
+
+.parent-Nav {
+  
+  display: flex;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  background-color: var(--bg-color-Aside);
+  color: #fff;
+
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+
+}
+
+
+
+/* Design for Table's */
+.parent-Table {
+  /* border: 1px solid black; */
+  /* border-radius: 20px; */
+
+  height: 50vh;
+  width: 80vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.table-Header th {
+  /* border: 1px solid black; */
+
+  width: 20vw;
+  height: 5vh;
+}
+
+.parent-Table .table-Header th {
+  background-color: var(--bg-color-Aside);
+  color: #fff;
+}
+
+.parent-Table tr input {
+
+  width: 20vw;
+  height: 5vh;
+}
