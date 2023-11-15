@@ -54,7 +54,7 @@
 
 /* Design for Table's */
 .parent-Table {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-radius: 20px;
 
   height: 50vh;
