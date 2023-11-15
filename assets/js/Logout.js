@@ -6,5 +6,11 @@ kasi kailangan may alert*/
 var Logout = document.getElementById("Logout");
 
 Logout.addEventListener("click", function() {
-  window.location.href = "/index.html";
+  // Display alert
+  var confirmLogout = confirm("Are you sure you want to log out?");
+  
+  // If the user confirms, redirect to "/index.html"
+  if (confirmLogout) {
+    window.location.href = "/index.html";
+  }
 });
