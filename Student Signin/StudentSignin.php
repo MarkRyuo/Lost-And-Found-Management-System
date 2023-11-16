@@ -98,6 +98,11 @@ $conn->close();
 
     <!-- JavaScript for the popup -->
     <script>
+        // Display the popup initially
+        window.onload = function() {
+            showPopup();
+        };
+
         function showPopup() {
             var popup = document.getElementById('popup');
             
