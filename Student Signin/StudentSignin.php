@@ -97,12 +97,13 @@ $conn->close();
     <script>
         function showPopup() {
             var popup = document.getElementById('popup');
-            
+
+            // Check if the popup has been shown
             if (popup.style.display === 'none') {
+                return true; // Continue with form submission
+            } else {
                 popup.style.display = 'block';
                 return false; // Prevent form submission
-            } else {
-                return true; // Continue with form submission
             }
         }
 
