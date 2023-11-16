@@ -30,19 +30,37 @@ body  {
 }
 
 .blank {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   background-color: var(--bg-color-Aside);
   
-  width: 40vw;
+  width: 30vw;
 }
 
 .sec-form {
   border: 1px solid black;
 
   width: 70vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/* Form-Signin */
+
+.Form-Signin {
+  border: 1px solid black;
+
+  height: 40vh;
+  width: 30vw;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
 
 
 
