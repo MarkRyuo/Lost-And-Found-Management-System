@@ -69,6 +69,12 @@ $conn->close();
 </head>
 <body>
     <h2>Login System</h2>
+    
+    <!-- Popup content -->
+    <div id="popup" style="display: block; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
+        <p>Welcome! If it's your first time, just enter your Sr-code as a Username and password.</p>
+        <button onclick="closePopup()" id="btnpopup">OK</button>
+    </div>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="sr_code">Sr_code:</label>
@@ -81,16 +87,11 @@ $conn->close();
     </form>
 
     <!-- JavaScript to hide the popup -->
-    <script>
-        // Hide the popup on page load
-        window.onload = function() {
-            hidePopup();
-        };
-
-        function hidePopup() {
+</body>
+<script>
+        function closePopup() {
             var popup = document.getElementById('popup');
             popup.style.display = 'none';
         }
     </script>
-</body>
 </html>
