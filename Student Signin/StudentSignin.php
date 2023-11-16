@@ -69,7 +69,13 @@ $conn->close();
 </head>
 <body>
     <h2>Login System</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="showPopup()">
+    <!-- Popup content -->
+    <div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
+        <p>Welcome! If it's your first time, just enter your Sr-code as the password.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="return showPopup()">
         <label for="sr_code">Sr_code:</label>
         <input type="text" id="sr_code" name="sr_code" pattern="\d{2}-\d{5}" title="Sr_code should follow the format 00-00000." required><br>
 
@@ -79,18 +85,22 @@ $conn->close();
         <input type="submit" value="Submit">
     </form>
 
-    <!-- Popup content -->
-    <div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
-        <p>Welcome! If it's your first time, just enter your Sr-code as the password.</p>
-        <button onclick="closePopup()">OK</button>
-    </div>
-
     <!-- JavaScript for the popup -->
     <script>
+        // Automatically display the popup when the page loads
+        window.onload = function() {
+            showPopup();
+        };
+
         function showPopup() {
             var popup = document.getElementById('popup');
-            popup.style.display = 'block';
-            return true; // Continue with form submission
+            
+            if (popup.style.display === 'none') {
+                popup.style.display = 'block';
+                return false; // Prevent form submission
+            } else {
+                return true; // Continue with form submission
+            }
         }
 
         function closePopup() {
