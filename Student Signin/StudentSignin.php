@@ -102,4 +102,17 @@ $conn->close();
         <input type="submit" value="Submit">
     </form>
 </body>
+ <!-- JavaScript for the popup -->
+ <script>
+        function showPopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'block';
+            return true; // Continue with form submission
+        }
+
+        function closePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        }
+    </script>
 </html>
