@@ -77,13 +77,15 @@ $conn->close();
     </div>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+
         <label for="sr_code">Sr_code:</label>
         <input type="text" id="sr_code" name="sr_code" pattern="\d{2}-\d{5}" title="Sr_code should follow the format 00-00000." required><br>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" pattern=".*-.*" title="Password should contain a hyphen." required><br>
+        <input type="password" id="password" name="password" pattern="\d{2}-\d{5}" title="Password should contain a hyphen." required><br>
 
         <input type="submit" value="Signin">
+        
     </form>
 
 
