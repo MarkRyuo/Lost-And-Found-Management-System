@@ -12,6 +12,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+// Flag to check if the popup has been shown
+$popupShown = false;
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get input data
     $sr_code = $_POST["sr_code"];
@@ -57,6 +60,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+// Check if the popup has been shown
+if (isset($_COOKIE['popupShown']) && $_COOKIE['popupShown'] == 'true') {
+    $popupShown = true;
+}
+
 $conn->close();
 ?>
 
@@ -70,8 +78,8 @@ $conn->close();
 <body>
     <h2>Login System</h2>
     <!-- Popup content -->
-    <div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
-        <p>Welcome! If it's your first time, just enter your Sr-code as the password.</p>
+    <div id="popup" style="display: <?php echo $popupShown ? 'none' : 'block'; ?>; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
+        <p>Welcome! If it's your first time, just enter your Sr-code as a Username and password.</p>
         <button onclick="closePopup()">OK</button>
     </div>
 
@@ -87,11 +95,6 @@ $conn->close();
 
     <!-- JavaScript for the popup -->
     <script>
-        // Automatically display the popup when the page loads
-        window.onload = function() {
-            showPopup();
-        };
-
         function showPopup() {
             var popup = document.getElementById('popup');
             
@@ -106,6 +109,9 @@ $conn->close();
         function closePopup() {
             var popup = document.getElementById('popup');
             popup.style.display = 'none';
+
+            // Set a cookie to remember that the popup has been shown
+            document.cookie = 'popupShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
         }
     </script>
 </body>
