@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // User does not exist, insert new user
         $insert_user_query = "INSERT INTO student (Sr_code, Password) VALUES ('$sr_code', '$password')";
         if ($conn->query($insert_user_query) === TRUE) {
-            echo "Sign up successful!";
+            echo "Sign up successful !";
             // Add your login logic here
         } else {
             echo "Error: " . $insert_user_query . "<br>" . $conn->error;
@@ -66,8 +66,31 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login System</title>
+    <!-- Design here pop-up -->
+    <style>
+        /* Style for the popup */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #d4d4d4;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+
 </head>
 <body>
+
+    <div id="popup">
+        <p>Welcome! If it's your first time, just enter your Sr-code as the password.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
     <h2>Login System</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="sr_code">Sr_code:</label>
