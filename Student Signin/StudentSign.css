@@ -11,7 +11,7 @@
 
 
 body  {
-  background-color: var();
+  background-color: var(--bg-Color);
 }
 
 
