@@ -86,9 +86,10 @@ $conn->close();
         <input type="submit" value="Signin">
     </form>
 
-    <!-- JavaScript to hide the popup -->
+
 </body>
-<script>
+<!-- JavaScript to hide the popup -->
+    <script>
         function closePopup() {
             var popup = document.getElementById('popup');
             popup.style.display = 'none';
