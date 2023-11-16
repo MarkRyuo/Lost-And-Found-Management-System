@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // User exists, check password
         $row = $result->fetch_assoc();
         if ($password == $row["password"]) {
-            // Login successful, redirect to a new page
+            // Login successful, redirect to a new page (StudentLostItem)
             header("Location: /Student View Lost/StudentView.html"); // Replace "welcome.php" with the desired page
             exit();
         } else {
@@ -54,7 +54,8 @@ $conn->close();
     <title>Login System</title>
 </head>
 <body>
-    <h2>Login System</h2>
+    <h2>Student Sign | Lost and Found</h2>
+
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="sr_code">Sr_code:</label>
         <input type="text" id="sr_code" name="sr_code" required><br>
