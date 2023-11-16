@@ -17,9 +17,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sr_code = $_POST["sr_code"];
     $password = $_POST["password"];
 
-    // Check if Sr_code is a 7-digit number
-    if (!preg_match('/^\d{7}$/', $sr_code)) {
-        echo "Sr_code should be a 7-digit number.";
+    // Check if Sr_code follows the format 00-00000
+    if (!preg_match('/^\d{2}-\d{5}$/', $sr_code)) {
+        echo "Sr_code should follow the format 00-00000.";
         $conn->close();
         exit();
     }
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if ($password == $row["password"]) {
             // Login successful, redirect to a new page
-            header("Location: welcome.php"); // Replace "welcome.php" with the desired page
+            header("Location: /Student View Lost/StudentView.html"); // Replace "welcome.php" with the desired page
             exit();
         } else {
             echo "Incorrect password!";
@@ -70,13 +70,11 @@ $conn->close();
 <body>
     <h2>Login System</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
-
         <label for="sr_code">Sr_code:</label>
-        <input type="text" id="sr_code" name="sr_code" pattern="\d{7}" title="Sr_code should be a 7-digit number and contain a hyphen(-)." required><br>
-
+        <input type="text" id="sr_code" name="sr_code" pattern="\d{2}-\d{5}" title="Sr_code should follow the format 00-00000." required><br>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" pattern=".*-.*" title="Password should be a 7-digit number and contain a hyphen(-)." required><br>
+        <input type="password" id="password" name="password" pattern=".*-.*" title="Password should contain a hyphen." required><br>
 
         <input type="submit" value="Submit">
     </form>
