@@ -93,10 +93,10 @@ $conn->close();
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" pattern=".*-.*" title="Password should contain a hyphen." required><br>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Signin">
     </form>
 </body>
- <!-- JavaScript for the popup -->
+<!-- JavaScript for the popup -->
 <script>
     // Display the popup initially
     window.onload = function() {
@@ -104,7 +104,7 @@ $conn->close();
     };
 
     function showPopup() {
-        var btnpopup = document.getElementById('btnpopup');
+        var popup = document.getElementById('popup');
         
         if (popup.style.display === 'none') {
             popup.style.display = 'block';
@@ -125,5 +125,6 @@ $conn->close();
         return true;
     }
 </script>
+
 
 </html>
