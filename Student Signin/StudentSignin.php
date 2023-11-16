@@ -12,15 +12,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Flag to check if the popup has been shown
-$popupShown = false;
-
-// Check if the popup has been shown
-if (isset($_COOKIE['popupShown']) && $_COOKIE['popupShown'] == 'true') {
-    $popupShown = true;
-}
-
-if ($_SERVER["REQUEST_METHOD"] == "POST" && !$popupShown) {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get input data
     $sr_code = $_POST["sr_code"];
     $password = $_POST["password"];
@@ -63,9 +55,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && !$popupShown) {
             echo "Error: " . $insert_user_query . "<br>" . $conn->error;
         }
     }
-
-    // Set a cookie to remember that the popup has been shown
-    setcookie('popupShown', 'true', time() + (10 * 365 * 24 * 60 * 60), '/');
 }
 
 $conn->close();
@@ -80,13 +69,8 @@ $conn->close();
 </head>
 <body>
     <h2>Login System</h2>
-    <!-- Popup content -->
-    <div id="popup" style="display: <?php echo $popupShown ? 'none' : 'block'; ?>; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
-        <p>Welcome! If it's your first time, just enter your Sr-code as a Username and password.</p>
-        <button onclick="closePopup()" id="btnpopup">OK</button>
-    </div>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="return showPopup()">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="sr_code">Sr_code:</label>
         <input type="text" id="sr_code" name="sr_code" pattern="\d{2}-\d{5}" title="Sr_code should follow the format 00-00000." required><br>
 
@@ -95,36 +79,18 @@ $conn->close();
 
         <input type="submit" value="Signin">
     </form>
-</body>
-<!-- JavaScript for the popup -->
-<script>
-    // Display the popup initially
-    window.onload = function() {
-        showPopup();
-    };
 
-    function showPopup() {
-        var popup = document.getElementById('popup');
-        
-        if (popup.style.display === 'none') {
-            popup.style.display = 'block';
-            return false; // Prevent form submission
-        } else {
-            return true; // Continue with form submission
+    <!-- JavaScript to hide the popup -->
+    <script>
+        // Hide the popup on page load
+        window.onload = function() {
+            hidePopup();
+        };
+
+        function hidePopup() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
         }
-    }
-
-    function closePopup() {
-        var popup = document.getElementById('popup');
-        popup.style.display = 'none';
-
-        // Set a cookie to remember that the popup has been shown
-        document.cookie = 'popupShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
-        
-        // Continue with form submission
-        return true;
-    }
-</script>
-
-
+    </script>
+</body>
 </html>
