@@ -15,7 +15,12 @@ if ($conn->connect_error) {
 // Flag to check if the popup has been shown
 $popupShown = false;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// Check if the popup has been shown
+if (isset($_COOKIE['popupShown']) && $_COOKIE['popupShown'] == 'true') {
+    $popupShown = true;
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && !$popupShown) {
     // Get input data
     $sr_code = $_POST["sr_code"];
     $password = $_POST["password"];
@@ -58,11 +63,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Error: " . $insert_user_query . "<br>" . $conn->error;
         }
     }
-}
 
-// Check if the popup has been shown
-if (isset($_COOKIE['popupShown']) && $_COOKIE['popupShown'] == 'true') {
-    $popupShown = true;
+    // Set a cookie to remember that the popup has been shown
+    setcookie('popupShown', 'true', time() + (10 * 365 * 24 * 60 * 60), '/');
 }
 
 $conn->close();
@@ -97,22 +100,18 @@ $conn->close();
     <script>
         function showPopup() {
             var popup = document.getElementById('popup');
-
-            // Check if the popup has been shown
+            
             if (popup.style.display === 'none') {
-                return true; // Continue with form submission
-            } else {
                 popup.style.display = 'block';
                 return false; // Prevent form submission
+            } else {
+                return true; // Continue with form submission
             }
         }
 
         function closePopup() {
             var popup = document.getElementById('popup');
             popup.style.display = 'none';
-
-            // Set a cookie to remember that the popup has been shown
-            document.cookie = 'popupShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
         }
     </script>
 </body>
