@@ -83,7 +83,7 @@ $conn->close();
     <!-- Popup content -->
     <div id="popup" style="display: <?php echo $popupShown ? 'none' : 'block'; ?>; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
         <p>Welcome! If it's your first time, just enter your Sr-code as a Username and password.</p>
-        <button onclick="closePopup()">OK</button>
+        <button onclick="closePopup()" id="btnpopup">OK</button>
     </div>
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="return showPopup()">
@@ -96,16 +96,15 @@ $conn->close();
         <input type="submit" value="Submit">
     </form>
 </body>
-    <!-- JavaScript for the popup -->
-   <!-- JavaScript for the popup -->
-   <script>
+ <!-- JavaScript for the popup -->
+<script>
     // Display the popup initially
     window.onload = function() {
         showPopup();
     };
 
     function showPopup() {
-        var popup = document.getElementById('popup');
+        var btnpopup = document.getElementById('btnpopup');
         
         if (popup.style.display === 'none') {
             popup.style.display = 'block';
@@ -126,4 +125,5 @@ $conn->close();
         return true;
     }
 </script>
+
 </html>
