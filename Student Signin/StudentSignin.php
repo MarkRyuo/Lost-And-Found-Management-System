@@ -25,8 +25,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // User exists, check password
         $row = $result->fetch_assoc();
         if ($password == $row["password"]) {
-            echo "Login successful!";
-            // Add your login logic here
+            // Login successful, redirect to a new page
+            header("Location: /Student View Lost/StudentView.html"); // Replace "welcome.php" with the desired page
+            exit();
         } else {
             echo "Incorrect password!";
         }
