@@ -4,6 +4,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "db_nt3102";
+// End Database connection
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
