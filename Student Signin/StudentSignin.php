@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         if ($password == $row["password"]) {
             // Login successful, redirect to a new page
-            header("Location: /Student View Lost/StudentView.html"); // Replace "welcome.php" with the desired page
+            header("Location: /Student View Lost/StudentView.html"); // Replace with the correct path
             exit();
         } else {
             echo "Incorrect password!";
