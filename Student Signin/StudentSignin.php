@@ -4,7 +4,6 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "db_nt3102";
-// End Database connection
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -18,6 +17,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sr_code = $_POST["sr_code"];
     $password = $_POST["password"];
 
+    // Check if Sr_code is a 7-digit number
+    if (!preg_match('/^\d{7}$/', $sr_code)) {
+        echo "Sr_code should be a 7-digit number.";
+        $conn->close();
+        exit();
+    }
+
+    // Check if password contains a hyphen
+    if (strpos($password, '-') === false) {
+        echo "Password should contain a hyphen.";
+        $conn->close();
+        exit();
+    }
+
     // Check if user exists
     $check_user_query = "SELECT * FROM student WHERE Sr_code = '$sr_code'";
     $result = $conn->query($check_user_query);
@@ -26,8 +39,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // User exists, check password
         $row = $result->fetch_assoc();
         if ($password == $row["password"]) {
-            // Login successful, redirect to a new page (StudentLostItem)
-            header("Location: /Student View Lost/StudentView.html"); // Replace "welcome.php" with the desired page
+            // Login successful, redirect to a new page
+            header("Location: welcome.php"); // Replace "welcome.php" with the desired page
             exit();
         } else {
             echo "Incorrect password!";
@@ -55,14 +68,13 @@ $conn->close();
     <title>Login System</title>
 </head>
 <body>
-    <h2>Student Sign | Lost and Found</h2>
-
+    <h2>Login System</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="sr_code">Sr_code:</label>
-        <input type="text" id="sr_code" name="sr_code" required><br>
+        <input type="text" id="sr_code" name="sr_code" pattern="\d{7}" title="Sr_code should be a 7-digit number." required><br>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br>
+        <input type="password" id="password" name="password" pattern=".*-.*" title="Password should contain a hyphen." required><br>
 
         <input type="submit" value="Submit">
     </form>
