@@ -70,8 +70,10 @@ $conn->close();
 <body>
     <h2>Login System</h2>
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+
         <label for="sr_code">Sr_code:</label>
         <input type="text" id="sr_code" name="sr_code" pattern="\d{7}" title="Sr_code should be a 7-digit number." required><br>
+
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" pattern=".*-.*" title="Password should contain a hyphen." required><br>
