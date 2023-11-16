@@ -1,0 +1,81 @@
+body{
+    font-family: inter;
+
+    background-color: #FFF0F3;
+    color: #A4133C;
+    margin: 0px ;
+}
+
+.right-section{
+    display: inline-block;
+    position: absolute;
+    width: 515px;
+    height: 738px;
+    margin-left: 1000px;
+    background-color: #A4133C;
+}
+div h2{
+    color: #FFF0F3;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+.StudentLogin{
+   
+    height: 500px;
+    width: 500px;
+
+    
+   position: absolute;
+    margin-top: 100px;
+    margin-left: 300px;
+
+}
+
+.student-text{
+    font-size: 30px;
+    margin-bottom: 70px;
+    margin-left: 60px;
+}
+
+.Sr-code{
+    font-size: 20px;
+    margin-bottom: 10px ;
+}
+
+.user{
+    height: 45px;
+    width: 300px;
+    border-radius: 30px;
+    border-style: none;
+    padding-left: 10px;
+    
+    margin-bottom: 20px;
+}
+
+
+.Login-Button{
+   
+    height: 45px;
+    width: 300px;
+    background-color: #A4133C;
+    color: #FFF0F3;
+
+    font-size: 15px;
+
+    border-radius: 30px;
+    border-style: none;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+}
+.Login-Button:hover{
+    opacity: 0.9;
+}
+
+.Login-Button:active{
+    background-color: #d73966;
+}
+
