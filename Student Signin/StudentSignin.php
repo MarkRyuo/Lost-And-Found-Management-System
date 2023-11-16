@@ -95,29 +95,35 @@ $conn->close();
 
         <input type="submit" value="Submit">
     </form>
-
-    <!-- JavaScript for the popup -->
-    <script>
-        // Display the popup initially
-        window.onload = function() {
-            showPopup();
-        };
-
-        function showPopup() {
-            var popup = document.getElementById('popup');
-            
-            if (popup.style.display === 'none') {
-                popup.style.display = 'block';
-                return false; // Prevent form submission
-            } else {
-                return true; // Continue with form submission
-            }
-        }
-
-        function closePopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'none';
-        }
-    </script>
 </body>
+    <!-- JavaScript for the popup -->
+   <!-- JavaScript for the popup -->
+   <script>
+    // Display the popup initially
+    window.onload = function() {
+        showPopup();
+    };
+
+    function showPopup() {
+        var popup = document.getElementById('popup');
+        
+        if (popup.style.display === 'none') {
+            popup.style.display = 'block';
+            return false; // Prevent form submission
+        } else {
+            return true; // Continue with form submission
+        }
+    }
+
+    function closePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.display = 'none';
+
+        // Set a cookie to remember that the popup has been shown
+        document.cookie = 'popupShown=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+        
+        // Continue with form submission
+        return true;
+    }
+</script>
 </html>
