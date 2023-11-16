@@ -31,9 +31,17 @@ body  {
 
 .blank {
   border: 1px solid black;
+
+  background-color: var(--bg-color-Aside);
   
+  width: 40vw;
 }
 
+.sec-form {
+  border: 1px solid black;
+
+  width: 70vw;
+}
 
 
 
