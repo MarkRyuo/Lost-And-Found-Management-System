@@ -69,9 +69,7 @@ $conn->close();
     <link rel="icon" type="img/x-icon" href="/assets/Images/Batstatelogo.png">
     <title>Student Signin | Lost ang found</title>
 </head>
-<body>
-    <h2>Login System</h2>
-    
+<body> 
     <!-- Popup content -->
     <div id="popup">
         <p>Welcome! If it's your first time, just enter your Sr-code as a Username and password.</p>
@@ -79,9 +77,6 @@ $conn->close();
     </div>
 
     <div class="container">
-        <div class="blank">
-            <h1>blank</h1>
-        </div>
     <!-- End Popup content -->
     <form method="post" class="Form-Signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
@@ -94,6 +89,10 @@ $conn->close();
         <input type="submit" value="Signin">
         
     </form>
+
+    <div class="blank">
+            <h1>blank</h1>
+    </div>
 
     </div>
 </body>
