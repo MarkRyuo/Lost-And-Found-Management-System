@@ -77,6 +77,11 @@ $conn->close();
         <p>Welcome! If it's your first time, just enter your Sr-code as a Username and password.</p>
         <button onclick="closePopup()" id="btnpopup">OK</button>
     </div>
+
+    <div class="container">
+        <div class="blank">
+            <h1>blank</h1>
+        </div>
     <!-- End Popup content -->
     <form method="post" class="Form-Signin" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
@@ -89,6 +94,8 @@ $conn->close();
         <input type="submit" value="Signin">
         
     </form>
+
+    </div>
 </body>
     <script src="/Student Signin/Popup.js"></script>
 </html>
