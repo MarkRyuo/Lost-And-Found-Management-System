@@ -66,33 +66,10 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login System</title>
-    <!-- Design here pop-up -->
-    <style>
-        /* Style for the popup */
-        #popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: #f1f1f1;
-            border: 1px solid #d4d4d4;
-            border-radius: 5px;
-            text-align: center;
-        }
-    </style>
-
 </head>
 <body>
-
-    <div id="popup">
-        <p>Welcome! If it's your first time, just enter your Sr-code as the password.</p>
-        <button onclick="closePopup()">OK</button>
-    </div>
-
     <h2>Login System</h2>
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" onsubmit="showPopup()">
         <label for="sr_code">Sr_code:</label>
         <input type="text" id="sr_code" name="sr_code" pattern="\d{2}-\d{5}" title="Sr_code should follow the format 00-00000." required><br>
 
@@ -101,9 +78,15 @@ $conn->close();
 
         <input type="submit" value="Submit">
     </form>
-</body>
- <!-- JavaScript for the popup -->
- <script>
+
+    <!-- Popup content -->
+    <div id="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; background-color: #f1f1f1; border: 1px solid #d4d4d4; border-radius: 5px; text-align: center;">
+        <p>Welcome! If it's your first time, just enter your Sr-code as the password.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <!-- JavaScript for the popup -->
+    <script>
         function showPopup() {
             var popup = document.getElementById('popup');
             popup.style.display = 'block';
@@ -115,4 +98,5 @@ $conn->close();
             popup.style.display = 'none';
         }
     </script>
+</body>
 </html>
