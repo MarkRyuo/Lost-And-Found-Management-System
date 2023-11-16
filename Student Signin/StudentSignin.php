@@ -77,7 +77,7 @@ $conn->close();
         <p>Welcome! If it's your first time, just enter your Sr-code as a Username and password.</p>
         <button onclick="closePopup()" id="btnpopup">OK</button>
     </div>
-
+    <!-- End Popup content -->
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
         <label for="sr_code">Sr_code:</label>
