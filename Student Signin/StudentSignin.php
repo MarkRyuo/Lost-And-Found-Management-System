@@ -87,7 +87,6 @@ $conn->close();
         <input type="submit" value="Signin">
         
     </form>
-
-
 </body>
+    <script src="/Student Signin/Popup.js"></script>
 </html>
