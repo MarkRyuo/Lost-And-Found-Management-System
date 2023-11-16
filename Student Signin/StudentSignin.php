@@ -91,10 +91,5 @@ $conn->close();
 
 </body>
 <!-- JavaScript to hide the popup -->
-    <script>
-        function closePopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'none';
-        }
-    </script>
+    <script src="/Student Signin/Popup.js"></script>
 </html>
