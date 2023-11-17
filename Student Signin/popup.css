@@ -36,15 +36,39 @@
 .text-popup {
   border: 1px solid black;
 
-  height: 55vh;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /* .img-box */
 
 .img-box {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   
   display: flex;
   align-items: center;
+
   
+}
+
+/* btnpopup */
+
+#btnpopup {
+  width: 15vw;
+  height: 5vh;
+}
+
+
+
+/* text-popup text */
+
+.text-popup h1 {
+  font-size: 2.8rem;
+}
+
+.text-popup p {
+  font-size: 1.5rem;
 }

@@ -83,8 +83,7 @@ $conn->close();
 
         <div class="text-popup">
             <h1>Welcome</h1>
-            <h2>Reminder</h2>
-            <p>If it's your first time, just enter your Sr-code as a Username and password.</p></p>
+            <p><mark>Reminder!</mark> If it's your first time, just enter your Sr-code as a Username and password.</p>
 
             <!-- Btn start -->
             <button onclick="closePopup()" id="btnpopup">OK</button>
