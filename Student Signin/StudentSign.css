@@ -35,10 +35,12 @@ body  {
   background-color: var(--bg-color-Aside);
   
   width: 30vw;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .sec-form {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   width: 70vw;
 
@@ -50,10 +52,11 @@ body  {
 /* Form-Signin */
 
 .Form-Signin {
-  border: 1px solid black;
+  border: 1px solid var(--bg-color-Aside);
+  box-shadow: 2px 2px 5px var(--bg-color-Aside-shadow);
 
   height: 50vh;
-  width: 40vw;
+  width: 20vw;
 
   display: flex;
   flex-direction: column;
