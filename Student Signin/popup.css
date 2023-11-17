@@ -27,14 +27,19 @@
 
 
 .sec-popup {
+  /* border: 1px solid black; */
   display: flex;
+  align-items: center;
+
+  height: 55vh;
+
   gap: 1vw;
 }
 
 /* text-popup*/
 
 .text-popup {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 
   height: 30vh;
   display: flex;
