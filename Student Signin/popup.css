@@ -35,4 +35,6 @@
 
 .text-popup {
   border: 1px solid black;
+
+  height: 55vh;
 }
