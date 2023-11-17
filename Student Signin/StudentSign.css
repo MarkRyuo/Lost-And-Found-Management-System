@@ -62,6 +62,15 @@ body  {
   justify-content: center;
 }
 
+/* Design form input */
+
+#sr_code,
+#password {
+  width: 10vw;
+  height: 4vh;
+
+  border-radius: 30px;
+}
 
 
 #popup {
