@@ -37,6 +37,10 @@ body  {
   width: 30vw;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  /* background-image: url(/assets/Images/Batstatelogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 50%; */
 }
 
 .sec-form {
