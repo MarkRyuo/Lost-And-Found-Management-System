@@ -1,6 +1,14 @@
 /* Import Font Here */
 
 
+
+:root {
+  --bg-Color: hsl(347, 100%, 98%);
+  --bg-color-Aside: hsl(343, 79%, 36%);
+  --bg-color-Aside-logo: hsl(343, 77%, 31%);
+  --bg-color-Aside-shadow: hsl(343, 78%, 18%);
+}
+
 #popup {
   display: block; 
   position: fixed; 
@@ -8,7 +16,9 @@
   left: 50%; 
   transform: translate(-50%, -50%); 
   padding: 20px; 
-  background-color: #f1f1f1; 
+  background-color: var(--bg-Color); 
   border: 1px solid #d4d4d4; 
   border-radius: 5px; text-align: center;
+  width: 50vw;
+  height: 40vh;
 }
