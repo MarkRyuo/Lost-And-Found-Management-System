@@ -28,7 +28,7 @@
 
 .sec-popup {
   display: flex;
-  gap: 5vw;
+  gap: 1vw;
 }
 
 /* text-popup*/
@@ -37,4 +37,14 @@
   border: 1px solid black;
 
   height: 55vh;
+}
+
+/* .img-box */
+
+.img-box {
+  border: 1px solid black;
+  
+  display: flex;
+  align-items: center;
+  
 }
