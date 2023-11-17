@@ -73,15 +73,25 @@ $conn->close();
 <body> 
     <!-- Popup content -->
     <div id="popup">
-        <div class="text-popup">
-        <h1>Welcome</h1>
-        <h2>Reminder</h2>
-        <p>If it's your first time, just enter your Sr-code as a Username and password.</p></p>
+
+        <section class="sec-popup">
+
+        <div class="img-box">
+            <img src="/assets/Images/Batstatelogo.png" alt="Logo of Bsu" style="width: 300px; opacity:60%;">
         </div>
 
-        <!-- Btn start -->
-        <button onclick="closePopup()" id="btnpopup">OK</button>
-        <!-- btn end -->
+
+        <div class="text-popup">
+            <h1>Welcome</h1>
+            <h2>Reminder</h2>
+            <p>If it's your first time, just enter your Sr-code as a Username and password.</p></p>
+
+            <!-- Btn start -->
+            <button onclick="closePopup()" id="btnpopup">OK</button>
+            <!-- btn end -->
+        </div>
+
+        </section>
     </div>
 
     <div class="container">

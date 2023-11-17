@@ -20,5 +20,19 @@
   border: 1px solid #d4d4d4; 
   border-radius: 5px; text-align: center;
   width: 50vw;
-  height: 40vh;
+  height: 60vh;
+}
+
+
+
+
+.sec-popup {
+  display: flex;
+  gap: 5vw;
+}
+
+/* text-popup*/
+
+.text-popup {
+  border: 1px solid black;
 }
