@@ -88,11 +88,11 @@ $conn->close();
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" pattern="\d{2}-\d{5}" title="Sr_code should be a 7-digit number and contain a hypen." required><br>
 
-                <input type="submit" value="Signin">
+                <input type="submit" value="Signin" class="sign-btn">
 
             </form>
         </section>
-        
+
         <div class="blank">
         </div>
 
