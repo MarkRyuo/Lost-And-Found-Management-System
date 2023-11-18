@@ -1,51 +1,64 @@
-<?php
-// Establish database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "db_nt3102";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <?php
+    session_start();
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Database connection details
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "db_nt3102";
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Process login form
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
 
-    // Query to check login credentials
-    $sql = "SELECT * FROM security WHERE Username = '$username'";
-    $result = $conn->query($sql);
+        // Get user input
+        $username = $_POST['username'];
+        $password = $_POST['password'];
 
-    if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
+        // Protect against SQL injection
+        $username = mysqli_real_escape_string($conn, $username);
+        $password = mysqli_real_escape_string($conn, $password);
 
-        // Output hashed password for debugging
-        echo "Stored Hashed Password: " . $row["Password"] . "<br>";
-        echo "Entered Hashed Password: " . password_hash($password, PASSWORD_DEFAULT) . "<br>";
+        // Check user credentials
+        $query = "SELECT * FROM security WHERE Username='$username' AND Password='$password'";
+        $result = $conn->query($query);
 
-        // Verify hashed password
-        if (password_verify($password, $row["Password"])) {
-            // Start a session
-            session_start();
-            
-            // Store user information in the session (you can add more information if needed)
-            $_SESSION["username"] = $username;
-
-            // Redirect to a success page
-            header("Location: /Home/Home.html");
+        if ($result->num_rows == 1) {
+            // Successful login
+            $_SESSION['username'] = $username;
+            header("Location: success.html");
             exit();
         } else {
-            echo "Invalid password!";
+            // Failed login
+            echo "Invalid username or password";
         }
-    } else {
-        echo "Username not found!";
-    }
-}
 
-$conn->close();
-?>
+        $conn->close();
+    }
+    ?>
+
+    <h2>Login</h2>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
