@@ -68,3 +68,20 @@ label {
   font-size: 1.3rem;
   text-align: center;
 }
+
+.sign-btn {
+  width: 5vw;
+  height: 4vh;
+
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-align: center;
+
+  margin-left: 4vw;
+}
+
+.Form-Signin h1 {
+  font-size: 2rem;
+
+  margin-left: 4vw;
+}
