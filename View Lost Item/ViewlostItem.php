@@ -1,3 +1,26 @@
+<?php
+// Replace these variables with your actual database connection details
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "db_nt3102";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Retrieve lost items from the Items table
+$sql = "SELECT * FROM Items ";
+$result = $conn->query($sql);
+
+?>
+
+
+<!-- HTML HERE -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
