@@ -61,21 +61,8 @@ $conn->close();
     <!-- btn save connection -->
     <link rel="stylesheet" href="/assets/css/btn-save.css">
     <!-- Add CSS for success message -->
+    <link rel="stylesheet" href="/ReportMissing/SuccessMessage.css">
     <title>Report Missing Item | Lost and Found </title>
-    <style>
-        .success-message {
-            text-align: center;
-            color: green;
-            font-weight: bold;
-            margin-top: 20px;
-            animation: fadeOut 3s ease-out;
-        }
-
-        @keyframes fadeOut {
-            0% { opacity: 1; }
-            100% { opacity: 0; }
-        }
-    </style>
 </head>
 <body>
 
