@@ -39,45 +39,6 @@ $result = $conn->query($sql);
 <body>
 
     <!-- This Aside -->
-    <aside>
-        <div class="Logo">
-          <div class="logo-align">
-            <img src="/assets/Images/lost-items-missing-svgrepo-com (1).png" alt="This is Image">
-            <h1>
-              Lost and Found <br> 
-              Management <br>System
-            </h1>
-          </div>
-          <p>General</p>
-        </div>
-  
-        <nav class="button-Nav">
-          <!-- User Profile -->
-        <hr>
-        <button class="btn" id="User">
-            <span class="btn-text-one"><i class="fa-solid fa-user-shield"></i></span>
-            <span class="btn-text-two">User Profile</span>
-        </button>
-        <hr>
-        <!-- View Lost Item -->
-        <button class="btn" id="viewlostItem">
-          <span class="btn-text-one"><i class="fa-regular fa-eye "></i></span>
-          <span class="btn-text-two">View Lost Item</span>
-        </button>
-        <hr>
-        <!--Report Missing-->
-        <button class="btn" id="reportMissing">
-          <span class="btn-text-one"><i class="fa-solid fa-person-circle-question "></i></span>
-          <span class="btn-text-two">Report Missing</span>
-        </button>
-        <hr>
-        <!-- Claim Conformation  -->
-        <button class="btn" id="claimConformation">
-          <span class="btn-text-one"><i class="fa-solid fa-square-check"></i></span>
-          <span class="btn-text-two">Claim Conformation</span>
-        </button>
-        <hr>
-      </aside>
       <!-- End of aside -->
       
    <main class="Tables">
