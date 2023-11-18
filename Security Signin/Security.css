@@ -12,3 +12,7 @@
   --bg-color-Aside-logo: hsl(343, 77%, 31%);
   --bg-color-Aside-shadow: hsl(343, 78%, 18%);
 }
+
+body  {
+  background-color: var(--bg-Color);
+}
