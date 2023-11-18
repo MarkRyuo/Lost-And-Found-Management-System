@@ -55,7 +55,7 @@
 
             
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="Form-Signin">
-                <h1>SignIn</h1>
+                <h1>Signin</h1>
                 <label for="username">Username:</label>
                 <input type="text" name="username" id="username" required><br>
 
