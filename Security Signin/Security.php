@@ -23,6 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
+
+        // Output hashed password for debugging
+        echo "Stored Hashed Password: " . $row["Password"] . "<br>";
+        echo "Entered Hashed Password: " . password_hash($password, PASSWORD_DEFAULT) . "<br>";
+
         // Verify hashed password
         if (password_verify($password, $row["Password"])) {
             // Start a session
