@@ -159,13 +159,5 @@ $conn->close();
   <script src="/assets/Aside-Nav/btn-aside.js"></script>
 
   <!-- animation  -->
-  <script>
-        // Automatically hide the success message after 3 seconds
-        setTimeout(function() {
-            var successMessage = document.querySelector('.success-message');
-            if (successMessage) {
-                successMessage.style.display = 'none';
-            }
-        }, 3000);
-    </script>
+  <script src="/ReportMissing/SuccessMessage.js"></script>
 </html>
