@@ -51,16 +51,18 @@
     }
     ?>
     <div class="container">
+        <section class="sec-form">
         <h2>SignIn</h2>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <label for="username">Username:</label>
-            <input type="text" name="username" required><br>
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <label for="username">Username:</label>
+                <input type="text" name="username" required><br>
 
-            <label for="password">Password:</label>
-            <input type="password" name="password" required><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" required><br>
 
-            <input type="submit" value="Login">
-        </form>
+                <input type="submit" value="Login">
+            </form>
+        </section>
     </div>
 </body>
 </html>
