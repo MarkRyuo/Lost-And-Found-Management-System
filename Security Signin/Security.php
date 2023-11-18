@@ -52,8 +52,10 @@
     ?>
     <div class="container">
         <section class="sec-form">
-        <h2>SignIn</h2>
+
+            
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+                <h1>SignIn</h1>
                 <label for="username">Username:</label>
                 <input type="text" name="username" required><br>
 
