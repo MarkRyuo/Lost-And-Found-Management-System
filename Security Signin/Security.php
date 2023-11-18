@@ -17,9 +17,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Hash the password (for better security)
-    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
     // Query to check login credentials
     $sql = "SELECT * FROM security WHERE Username = '$username'";
     $result = $conn->query($sql);
@@ -28,8 +25,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $row = $result->fetch_assoc();
         // Verify hashed password
         if (password_verify($password, $row["Password"])) {
-            echo "Login successful!";
-            // You can redirect or perform other actions here
+            // Start a session
+            session_start();
+            
+            // Store user information in the session (you can add more information if needed)
+            $_SESSION["username"] = $username;
+
+            // Redirect to a success page
+            header("Location: /Home/Home.html);
+            exit();
         } else {
             echo "Invalid password!";
         }
