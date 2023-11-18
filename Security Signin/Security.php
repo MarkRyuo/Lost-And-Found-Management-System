@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["username"] = $username;
 
             // Redirect to a success page
-            header("Location: /Home/Home.html);
+            header("Location: /Home/Home.html");
             exit();
         } else {
             echo "Invalid password!";
