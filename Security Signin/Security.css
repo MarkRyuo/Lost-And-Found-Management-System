@@ -17,6 +17,17 @@ body  {
   background-color: var(--bg-Color);
 }
 
+.container {
+  border: 1px solid black;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  
+  
+}
+
 .sec-form {
   /* border: 1px solid black; */
 
