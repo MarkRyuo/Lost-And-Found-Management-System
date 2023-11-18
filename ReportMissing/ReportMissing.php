@@ -61,7 +61,7 @@ $conn->close();
     <!-- btn save connection -->
     <link rel="stylesheet" href="/assets/css/btn-save.css">
     <!-- Add CSS for success message -->
-    <title>Report Missing Item</title>
+    <title>Report Missing Item | Lost and Found </title>
     <style>
         .success-message {
             text-align: center;
