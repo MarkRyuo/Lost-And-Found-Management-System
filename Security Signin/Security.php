@@ -50,7 +50,7 @@
         $conn->close();
     }
     ?>
-    <section class="Form-Signin">
+    <div class="container">
         <h2>SignIn</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="username">Username:</label>
@@ -61,6 +61,6 @@
 
             <input type="submit" value="Login">
         </form>
-    </section>
+    </div>
 </body>
 </html>
