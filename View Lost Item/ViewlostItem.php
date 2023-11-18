@@ -19,7 +19,6 @@ $result = $conn->query($sql);
 
 ?>
 
-
 <!-- HTML HERE -->
 <!DOCTYPE html>
 <html lang="en">
@@ -95,44 +94,33 @@ $result = $conn->query($sql);
     </header>
     
       <!-- Table Here -->
-      <table class="parent-Table">
-        <!--5 table table header (th)  table row(tr)-->
-        <tr class="table-Header">
-          <th>Item Number</th>
-          <th>Item Name</th>
-          <th>Date Found</th>
-        </tr>
-        <!-- Need 5 table Data Cell (td) -->
-        <!-- First Table -->
-        <tr>
-          <td><input type="text" placeholder="ItemNumber" readonly></td>
-          <td><input type="text" placeholder="ItemName" readonly></td>
-          <td><input type="text" placeholder="FoundDate" readonly></td>
-          <!-- <td><button>View</button></td> this is Pilot -->
-        </tr>
+      <?php
+// Display lost items
+if ($result->num_rows > 0) {
+    
+    echo "<table class='parent-Table'>";
+    echo "<tr class='table-Header'>";
+    echo "<th>Item ID</th>";
+    echo "<th>Item Name</th>";
+    echo "<th>Found Date</th>";
+    echo "</tr>";
 
-        <!-- 2nd table  -->
-        <tr>
-          <td><input type="text" readonly></td>
-          <td><input type="text" readonly></td>
-          <td><input type="text" readonly></td>
-        </tr>
-  
-        <!-- 3rd Table -->
-        <tr>
-          <td><input type="text" readonly></td>
-          <td><input type="text" readonly></td>
-          <td><input type="text" readonly></td>
-        </tr>
+    while ($row = $result->fetch_assoc()) {
+        echo "<tr class='table-Data'>";
+        echo "<td><input type='text' value='" . $row["ItemID"] . "' readonly></td>";
+        echo "<td><input type='text' value='" . $row["ItemName"] . "' readonly></td>";
+        echo "<td><input type='text' value='" . $row["FoundDate"] . "' readonly></td>";
+        echo "</tr>";
+    }
 
-        <!-- 4th Table -->
-        <tr>
-          <td><input type="text" readonly></td>
-          <td><input type="text" readonly></td>
-          <td><input type="text" readonly></td>
-        </tr>
+    echo "</table>";
+} else {
+    echo "No lost items found.";
+}
 
-      </table>
+// Close the database connection
+$conn->close();
+?>
   </main>
 </body>
   <!-- connection in aside js -->
