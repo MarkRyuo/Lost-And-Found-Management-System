@@ -52,3 +52,19 @@ body  {
   justify-content: center;
   gap: 1vh;
 }
+
+/* Design form input */
+
+label {
+  font-size: 1.2rem;
+}
+
+#sr_code,
+#password {
+  width: 13vw;
+  height: 5vh;
+
+  border-radius: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+}
