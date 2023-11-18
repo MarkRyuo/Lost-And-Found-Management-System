@@ -39,7 +39,7 @@
         if ($result->num_rows == 1) {
             // Successful login
             $_SESSION['username'] = $username;
-            header("Location: Home\Home.html");
+            header("Location: \Home\Home.html");
             exit();
         } else {
             // Failed login
