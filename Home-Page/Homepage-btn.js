@@ -13,7 +13,7 @@ studentSignin.addEventListener("click", function() {
 var securitySignin = document.getElementById("securitySignin");
 
 securitySignin.addEventListener("click", function() {
-  window.location.href = "/Security Signin/Security.html";
+  window.location.href = "/Security Signin/Security.php";
 });
 
 // adminSignin btn 
