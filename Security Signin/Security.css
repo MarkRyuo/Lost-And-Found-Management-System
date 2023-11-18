@@ -37,3 +37,18 @@ body  {
   align-items: center;
   justify-content: center;
 }
+
+.Form-Signin {
+  border: 1px solid var(--bg-color-Aside);
+  box-shadow: 2px 2px 5px var(--bg-color-Aside-shadow);
+
+  height: 50vh;
+  width: 20vw;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 1vh;
+}
