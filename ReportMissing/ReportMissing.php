@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 // Replace these variables with your actual database connection details
 $servername = "localhost";
 $username = "root";
@@ -28,38 +30,41 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($conn->query($sql) === TRUE) {
         $successMessage = "Item reported successfully!";
+        $_SESSION['successMessage'] = $successMessage; // Store in session
+        header("Location: ".$_SERVER['PHP_SELF']); // Redirect to clear POST data
+        exit();
     } else {
         $successMessage = "Error: " . $sql . "<br>" . $conn->error;
     }
 }
 
+// Retrieve success message from session (if set)
+if (isset($_SESSION['successMessage'])) {
+    $successMessage = $_SESSION['successMessage'];
+    unset($_SESSION['successMessage']); // Clear session variable
+}
+
 // Close the database connection
 $conn->close();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="img/x-icon" href="/assets/Images/Batstatelogo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/assets/Aside-Nav/Aside.css">
-    <link rel="stylesheet" href="/ReportMissing/Reportmissing.css">
-    <!-- btn Logout Connection -->
-    <link rel="stylesheet" href="/assets/css/btn-LogoutView.css">
-    <!-- btn save connection -->
-    <link rel="stylesheet" href="/assets/css/btn-save.css">
-    <!-- Add CSS for success message -->
+    <!-- ... (unchanged) ... -->
     <style>
         .success-message {
             text-align: center;
             color: green;
             font-weight: bold;
             margin-top: 20px;
+            animation: fadeOut 3s ease-out;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
         }
     </style>
-    <title>Report Missing | Lost and Found</title>
 </head>
 <body>
 
@@ -154,4 +159,15 @@ $conn->close();
   <script src="/assets/js/Logout.js"></script>
   <!-- btn aside connection -->
   <script src="/assets/Aside-Nav/btn-aside.js"></script>
+
+  <!-- animation  -->
+  <script>
+        // Automatically hide the success message after 3 seconds
+        setTimeout(function() {
+            var successMessage = document.querySelector('.success-message');
+            if (successMessage) {
+                successMessage.style.display = 'none';
+            }
+        }, 3000);
+    </script>
 </html>
