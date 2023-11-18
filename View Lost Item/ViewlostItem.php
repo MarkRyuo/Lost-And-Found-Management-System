@@ -33,6 +33,7 @@ $result = $conn->query($sql);
 
   <!-- btn Logout connection -->
   <link rel="stylesheet" href="/assets/css/btn-LogoutView.css">
+  <link rel="stylesheet" href="/View Lost Item/View.css">
   <title>View Lost Item|Lost and Found</title>
 </head>
 <body>
@@ -121,6 +122,7 @@ if ($result->num_rows > 0) {
 // Close the database connection
 $conn->close();
 ?>
+
   </main>
 </body>
   <!-- connection in aside js -->

@@ -1,0 +1,29 @@
+
+
+
+
+.parent-Table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-Header th {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+
+
+/*  */
+
+.table-Data td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+}
