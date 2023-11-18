@@ -50,7 +50,7 @@
     }
     ?>
     <section>
-        <h2>Login</h2>
+        <h2>SignIn</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="username">Username:</label>
             <input type="text" name="username" required><br>
