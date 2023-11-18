@@ -64,9 +64,9 @@
 
                 <input type="submit" value="Login" class="sign-btn">
             </form>
-            <div class="blank">
-            </div>
         </section>
+        <div class="blank">
+            </div>
     </div>
 </body>
 </html>
