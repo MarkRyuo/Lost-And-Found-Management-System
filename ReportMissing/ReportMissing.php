@@ -1,3 +1,40 @@
+<?php
+// Replace these variables with your actual database connection details
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "db_nt3102";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect user input
+    $itemName = $_POST["item_name"];
+    $foundDate = $_POST["found_date"];  
+
+    // Insert the new item into the Items table
+    $sql = "INSERT INTO Items (ItemName, FoundDate)
+            VALUES ('$itemName', '$foundDate')";
+
+    if ($conn->query($sql) === TRUE) {
+        echo "Item reported successfully!";
+    } else {
+        echo "Error: " . $sql . "<br>" . $conn->error;
+    }
+}
+
+// Close the database connection
+$conn->close();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -71,7 +108,7 @@
           </div>
         </nav>
 
-        <form class="report-section">
+        <form method="post" class="report-section" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
           <!-- <input type="text" placeholder="Item-Number" class="item-number-wsmall" readonly> -->
     
           <div class="subsection-input">
@@ -90,7 +127,7 @@
             <span class="save-text">Save</span>
           </button>
         </form>
-        
+
       </main>
 
     
