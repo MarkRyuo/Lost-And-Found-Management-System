@@ -93,3 +93,7 @@ body {
   width: 20vw;
   height: 5vh;
 }
+
+.table-Data td {
+  border: 1px solid black;
+}
