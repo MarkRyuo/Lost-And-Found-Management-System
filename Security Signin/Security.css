@@ -85,3 +85,20 @@ label {
 
   margin-left: 4vw;
 }
+
+
+/* Blank */
+
+.blank {
+  /* border: 1px solid black; */
+
+  background-color: var(--bg-color-Aside);
+  
+  width: 30vw;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  /* background-image: url(/assets/Images/Batstatelogo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 50%; */
+}
