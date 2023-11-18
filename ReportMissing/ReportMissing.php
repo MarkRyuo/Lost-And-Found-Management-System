@@ -13,6 +13,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+// Initialize the success message variable
+$successMessage = "";
+
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Collect user input
@@ -24,9 +27,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$itemName', '$foundDate')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Item reported successfully!";
+        $successMessage = "Item reported successfully!";
     } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+        $successMessage = "Error: " . $sql . "<br>" . $conn->error;
     }
 }
 
@@ -34,10 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $conn->close();
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/x-icon" href="/assets/Images/Batstatelogo.png">
@@ -48,9 +50,18 @@ $conn->close();
     <link rel="stylesheet" href="/assets/css/btn-LogoutView.css">
     <!-- btn save connection -->
     <link rel="stylesheet" href="/assets/css/btn-save.css">
+    <!-- Add CSS for success message -->
+    <style>
+        .success-message {
+            text-align: center;
+            color: green;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
     <title>Report Missing | Lost and Found</title>
-  </head>
-  <body>
+</head>
+<body>
 
     <aside>
       <!-- Just Wait Here this is navigation but in Left side -->
@@ -108,12 +119,19 @@ $conn->close();
           </div>
         </nav>
 
+        <!-- Display success message -->
+        <?php
+        if (!empty($successMessage)) {
+            echo '<div class="success-message">' . $successMessage . '</div>';
+        }
+        ?>
+
         <form method="post" class="report-section" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
           <!-- <input type="text" placeholder="Item-Number" class="item-number-wsmall" readonly> -->
     
           <div class="subsection-input">
             <input type="text" name="item_name" placeholder="Item-Name" required>
-            <input type="date" name="found_date placeholder="Item-Date" required>
+            <input type="date" name="found_date" placeholder="Item-Date" required>
           </div>
     
           <input type="file" name="filename" class="file-upload">
