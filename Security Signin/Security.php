@@ -66,7 +66,7 @@
             </form>
         </section>
         <div class="blank">
-            </div>
+        </div>
     </div>
 </body>
 </html>
