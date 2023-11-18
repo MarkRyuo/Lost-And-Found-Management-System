@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="/Security Signin/Security.css">
+    <title>Security Signin | Lost and Found</title>
 </head>
 <body>
     <?php
@@ -49,16 +50,23 @@
         $conn->close();
     }
     ?>
+    <div class="container">
+        <section class="sec-form">
 
-    <h2>Login</h2>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="username">Username:</label>
-        <input type="text" name="username" required><br>
+            
+            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="Form-Signin">
+                <h1>Signin</h1>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required><br>
 
-        <label for="password">Password:</label>
-        <input type="password" name="password" required><br>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" required><br>
 
-        <input type="submit" value="Login">
-    </form>
+                <input type="submit" value="Login" class="sign-btn">
+            </form>
+        </section>
+        <div class="blank">
+        </div>
+    </div>
 </body>
 </html>
