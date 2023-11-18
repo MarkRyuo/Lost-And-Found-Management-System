@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <link rel="stylesheet" href="">
+    <title>Security Signin | Lost and Found</title>
 </head>
 <body>
     <?php
@@ -49,7 +50,7 @@
         $conn->close();
     }
     ?>
-    <section>
+    <section class="Form-Signin">
         <h2>SignIn</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <label for="username">Username:</label>
