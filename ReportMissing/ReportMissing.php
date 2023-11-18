@@ -112,8 +112,8 @@ $conn->close();
           <!-- <input type="text" placeholder="Item-Number" class="item-number-wsmall" readonly> -->
     
           <div class="subsection-input">
-            <input type="text" placeholder="Item-Name" required>
-            <input type="text" placeholder="Item-Date" required>
+            <input type="text" name="item_name" placeholder="Item-Name" required>
+            <input type="date" name="found_date placeholder="Item-Date" required>
           </div>
     
           <input type="file" name="filename" class="file-upload">
