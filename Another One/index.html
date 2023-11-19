@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Lost and Found Management System</h1>
+
+<!-- Form to report a lost item -->
+<form id="reportForm">
+    Item Number: <input type="text" id="itemNumber" required><br>
+    Item Name: <input type="text" id="itemName" required><br>
+    Date Found: <input type="date" id="dateFound" required><br>
+    <button type="button" onclick="reportLost()">Report Lost</button>
+</form>
+
+<!-- View Lost Items -->
+<!-- <div id="viewLost"></div> -->
+
+<!-- Claimed Items -->
+<!-- <div id="claimedItems"></div> -->
+<a href="/Another One/View Lost Items.html">View Lost Items</a>
+<br>
+<a href="/Another One/ClaimedItems.html">ClaimedItems</a>
+
+<script src="script.js"></script>
+</body>
+</html>

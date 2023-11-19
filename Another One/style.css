@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#viewLost, #claimedItems {
+  margin-top: 20px;
+}
