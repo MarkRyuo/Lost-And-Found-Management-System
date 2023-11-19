@@ -42,6 +42,7 @@
             $_SESSION['username'] = $username;
             header("Location: \Home\Home.html");
             exit();
+
         } else {
             // Failed login
             echo "Invalid username or password";
